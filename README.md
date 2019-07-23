@@ -1,2 +1,2 @@
-# activities
+# Activities
 Ayehu activities repository
