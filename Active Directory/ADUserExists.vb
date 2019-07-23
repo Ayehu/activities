@@ -50,7 +50,7 @@ Namespace Ayehu.Sdk.ActivityCreation
         Public Function GetAdEntry(ByVal domainServer As String, ByVal domainPort As String, ByVal username As String, ByVal password As String) As DirectoryEntry
 
             Dim defaultAdSecurePort As String = "636"
-            If domainPort.Equals(defaultAdSecurePort) AndAlso IsIpAddress(domainServer) Then Throw New Exception("When using a secure port, a server domain name must be defined for the device.")
+            If domainPort.Equals(defaultAdSecurePort) AndAlso IsIpAddress(domainServer) Then Throw New Exception("When using a secure port, aÂ server domain name must be defined for the device.")
             Dim domainUrl As String = "LDAP://" & domainServer
 
             If Not domainPort.Equals(DefaultAdPort) Then
