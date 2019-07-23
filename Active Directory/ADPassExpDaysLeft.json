@@ -1,0 +1,108 @@
+{
+    "data": {
+        "name": "AD Password Expiration Days Left",
+        "description": "Active Directory returns the number of days left before password expires.",
+        "Timeout": "00:01:00",
+        "class": [],
+        "rootSettings": {
+            "isCollapse": false,
+            "activitySettings": [
+                {
+                    "value": "",
+                    "required": true,
+                    "key": "ADUserName",
+                    "disabled": false,
+                    "styleClass": "",
+                    "label": "Account Name",
+                    "labelKey": "AD_PASSWORD_EXPIRATION_DAYS_LEFT_USER_LOGON_NAME",
+                    "baseType": "control",
+                    "controlType": "textbox",
+                    "controlOptions": []
+                },
+                {
+                    "value": "newControl",
+                    "required": false,
+                    "key": "newControl",
+                    "disabled": false,
+                    "label": "newControl",
+                    "styleClass": "",
+                    "labelKey": "newControl",
+                    "baseType": "hostGroup",
+                    "controlType": "",
+                    "controlOptions": []
+                },
+                {
+                    "value": "389",
+                    "required": false,
+                    "key": "SecurePort",
+                    "disabled": false,
+                    "label": "Port",
+                    "styleClass": "",
+                    "labelKey": "AD_LIST_OU_SECUREPORT",
+                    "baseType": "control",
+                    "controlType": "autocomplete",
+                    "controlOptions": [
+                      {
+                        "key": "389",
+                        "value": "389"
+                      },
+                      {
+                        "key": "636 (Secure)",
+                        "value": "636"
+                      }
+                    ]
+                },
+                {
+                    "value": "manualdefineage",
+                    "required": false,
+                    "key": "passwordAge",
+                    "disabled": false,
+                    "label": "",
+                    "labelKey": "AD_PASSWORD_EXPIRATION_DAYS_LEFT_",
+                    "baseType": "control",
+                    "controlType": "radiobutton",
+                    "controlOptions": [
+                        {
+                            "value": "useActiveDirectorypasswordmaxage",
+                            "label": "Use Active Directory password max age"
+                        },
+                        {
+                            "value": "manualdefineage",
+                            "label": "Manual define age"
+                        }
+                    ],
+                    "valueChangesActions": {
+                        "useActiveDirectorypasswordmaxage": {
+                            "disable": [
+                                "Days"
+                            ],
+                            "setValue": {
+                                "Days": ""
+                            }
+                        },
+                        "manualdefineage": {
+                            "enable": [
+                                "Days"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "value": "",
+                    "required": true,
+                    "key": "Days",
+                    "disabled": true,
+                    "label": "Age",
+                    "styleClass": "",
+                    "labelKey": "AD_PASSWORD_EXPIRATION_DAYS_LEFT_",
+                    "baseType": "control",
+                    "controlType": "textbox",
+                    "controlOptions": []
+                }
+            ],
+            "index": "1",
+            "label": "main",
+            "labelKey": null
+        }
+    }
+}

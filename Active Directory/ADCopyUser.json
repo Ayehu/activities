@@ -1,0 +1,340 @@
+{
+  "data": {
+    "name": "AD Copy User",
+    "description": "Active Directory copy user.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "required": true,
+          "key": "ADUserName",
+          "label": "Account Name",
+          "labelKey": "ACCOUNT_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "value": "",
+          "required": false,
+          "key": 2,
+          "disabled": false,
+          "label": "new control11",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+            "value": "389",
+            "required": false,
+            "key": "SecurePort",
+            "disabled": false,
+            "label": "Port",
+            "styleClass": "",
+            "labelKey": "AD_LIST_OU_SECUREPORT",
+            "baseType": "control",
+            "controlType": "autocomplete",
+            "controlOptions": [
+                {
+                    "key": "389",
+                    "value": "389"
+                },
+                {
+                    "key": "636 (Secure)",
+                    "value": "636"
+                }
+            ]
+        },
+        {
+          "required": true,
+          "key": "FirstName",
+          "label": "First Name",
+          "labelKey": "AD_COPY_USER_FIRST_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "key": "Initials",
+          "label": "Initials",
+          "labelKey": "INITIALS",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "required": false,
+          "key": "LastName",
+          "disabled": false,
+          "label": "Last Name",
+          "styleClass": "",
+          "labelKey": "AD_COPY_USER_LAST_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "controlOptions": [],
+          "value": ""
+        },
+        {
+          "required": true,
+          "key": "FullName",
+          "disabled": false,
+          "label": "Full Name",
+          "styleClass": "",
+          "labelKey": "AD_COPY_USER_FULL_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "controlOptions": [],
+          "value": ""
+        },
+        {
+          "required": true,
+          "key": "LoginName",
+          "disabled": false,
+          "label": "Login name",
+          "labelKey": "AD_COPY_USER_LOGIN_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "required": true,
+          "key": "LoginPassword",
+          "label": "Login password",
+          "styleClass": "",
+          "labelKey": "AD_COPY_USER_LOGIN_PASSWORD",
+          "baseType": "control",
+          "controlType": "password",
+          "value": ""
+        },
+        {
+          "required": false,
+          "key": "Email",
+          "disabled": false,
+          "label": "Email",
+          "styleClass": "",
+          "labelKey": "AD_COPY_USER_EMAIL",
+          "baseType": "control",
+          "controlType": "textbox",
+          "controlOptions": [],
+          "value": ""
+        },
+        {
+          "value": "",
+          "key": "Chkpasswordnextlogin",
+          "label": "User must change password at next login",
+          "styleClass": "",
+          "labelKey": "AD_COPY_USER_USER_MUST_CHANGE_PASSWORD_AT_NEXT_LOGIN",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "controlOptions": [],
+          "valueChangesActions": {
+            "true": {
+              "disable": [
+                "Chkpasswordexpires"
+              ]
+            },
+            "false": {
+              "enable": [
+                "Chkpasswordexpires"
+              ]
+            }
+          }
+        },
+        {
+          "value": "",
+          "key": "Chkpasswordexpires",
+          "label": "Password never expires",
+          "styleClass": "",
+          "labelKey": "AD_COPY_USER_PASSWORD_NEVER_EXPIRES",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "controlOptions": [],
+          "valueChangesActions": {
+            "true": {
+              "disable": [
+                "Chkpasswordnextlogin"
+              ]
+            },
+            "false": {
+              "enable": [
+                "Chkpasswordnextlogin"
+              ]
+            }
+          }
+        },
+        {
+          "value": "",
+          "key": "Properties",
+          "label": "Properties",
+          "labelKey": "ADDITIONAL_PROPERTIES",
+          "styleClass": "one-line",
+          "baseType": "control",
+          "controlType": "multiSelect",
+          "pluralItemsDisplayValue": "properties",
+          "singleItemDisplayValue": "property",
+          "pairsDelimiter": ",",
+          "initialSelection": [
+            "Groups"
+          ],
+          "controlOptions": [
+            {
+              "key": "l",
+              "value": "City"
+            },
+            {
+              "key": "company",
+              "value": "Company"
+            },
+            {
+              "key": "c",
+              "value": "Country"
+            },
+            {
+              "key": "department",
+              "value": "Department"
+            },
+            {
+              "key": "description",
+              "value": "Description"
+            },
+            {
+              "key": "division",
+              "value": "Division"
+            },
+            {
+              "key": "employeeID",
+              "value": "Employee ID"
+            },
+            {
+              "key": "employeeNumber",
+              "value": "Employee Number"
+            },
+            {
+              "key": "employeeType",
+              "value": "Employee Type"
+            },
+            {
+              "key": "facsimileTelephoneNumber",
+              "value": "Fax"
+            },
+            {
+              "key": "otherFacsimile",
+              "value": "Fax (Other)"
+            },
+            {
+              "key": "Groups",
+              "value": "Groups"
+            },
+            {
+              "key": "HomeDrive",
+              "value": "Home Drive"
+            },
+            {
+              "key": "HomeDirectory",
+              "value": "Home Folder"
+            },
+            {
+              "key": "homePhone",
+              "value": "Home Phone"
+            },
+            {
+              "key": "otherHomePhone",
+              "value": "Home Phone (Other)"
+            },
+            {
+              "key": "ipPhone",
+              "value": "IP Phone"
+            },
+            {
+              "key": "otherIpPhone",
+              "value": "IP Phone (Other)"
+            },
+            {
+              "key": "scriptPath",
+              "value": "Login Script"
+            },
+            {
+              "key": "manager",
+              "value": "Manager"
+            },
+            {
+              "key": "mobile",
+              "value": "Mobile"
+            },
+            {
+              "key": "otherMobile",
+              "value": "Mobile (Other)"
+            },
+            {
+              "key": "info",
+              "value": "Notes"
+            },
+            {
+              "key": "physicalDeliveryOfficeName",
+              "value": "Office"
+            },
+            {
+              "key": "pager",
+              "value": "Pager"
+            },
+            {
+              "key": "otherPager",
+              "value": "Pager (Other)"
+            },
+            {
+              "key": "postOfficeBox",
+              "value": "PO Box"
+            },
+            {
+              "key": "profilePath",
+              "value": "Profile Path"
+            },
+            {
+              "key": "roomNumber",
+              "value": "Room Number"
+            },
+            {
+              "key": "st",
+              "value": "State/Province"
+            },
+            {
+              "key": "streetAddress",
+              "value": "Street"
+            },
+            {
+              "key": "telephoneNumber",
+              "value": "Telephone Number"
+            },
+            {
+              "key": "otherTelephone",
+              "value": "Telephone Number (Other)"
+            },
+            {
+              "key": "title",
+              "value": "Title"
+            },
+            {
+              "key": "wWWHomePage",
+              "value": "Web Page"
+            },
+            {
+              "key": "url",
+              "value": "Web Page (Other)"
+            },
+            {
+              "key": "postalCode",
+              "value": "Zip/Postal Code"
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

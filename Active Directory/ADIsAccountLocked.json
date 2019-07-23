@@ -1,0 +1,59 @@
+{
+    "data": {
+        "name": "AD Is Account Locked",
+        "description": "Active Directory account lock check.",
+        "Timeout": "00:01:00",
+        "class": [],
+        "rootSettings": {
+            "isCollapse": false,
+            "activitySettings": [
+                {
+                    "value": "",
+                    "required": true,
+                    "key": "ADUserName",
+                    "disabled": false,
+                    "label": "Name",
+                    "styleClass": "",
+                    "labelKey": "AD_IS_ACCOUNT_LOCKED_COMPUTER_USER_LOGON_NAME",
+                    "baseType": "control",
+                    "controlType": "textbox",
+                    "controlOptions": []
+                },
+                {
+                    "value": "",
+                    "key": "hostGroup",
+                    "label": "",
+                    "styleClass": "",
+                    "labelKey": "",
+                    "baseType": "hostGroup",
+                    "controlType": "",
+                    "controlOptions": []
+                },
+                {
+                    "value": "389",
+                    "required": false,
+                    "key": "SecurePort",
+                    "disabled": false,
+                    "label": "Port",
+                    "styleClass": "",
+                    "labelKey": "AD_LIST_OU_SECUREPORT",
+                    "baseType": "control",
+                    "controlType": "autocomplete",
+                    "controlOptions": [
+                        {
+                            "key": "389",
+                            "value": "389"
+                        },
+                        {
+                            "key": "636 (Secure)",
+                            "value": "636"
+                        }
+                    ]
+                }
+            ],
+            "index": "1",
+            "label": "main",
+            "labelKey": null
+        }
+    }
+}

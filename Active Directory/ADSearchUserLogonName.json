@@ -1,0 +1,192 @@
+{
+    "data": {
+        "name": "AD Search User Logon Name",
+        "size": "m-size",
+        "description": "Synchronize Active Directory users and data.",
+        "Timeout": "00:01:00",
+        "class": [],
+        "rootSettings": {
+            "isCollapse": false,
+            "activitySettings": [
+                {
+                    "value": "",
+                    "required": false,
+                    "key": "newControl",
+                    "disabled": false,
+                    "label": "newControl",
+                    "styleClass": "",
+                    "labelKey": "newControl",
+                    "baseType": "hostGroup",
+                    "controlType": "",
+                    "controlOptions": []
+                },
+                {
+                    "value": "389",
+                    "required": false,
+                    "key": "SecurePort",
+                    "disabled": false,
+                    "label": "Port",
+                    "styleClass": "",
+                    "labelKey": "AD_LIST_OU_SECUREPORT",
+                    "baseType": "control",
+                    "controlType": "autocomplete",
+                    "controlOptions": [
+                        {
+                            "key": "389",
+                            "value": "389"
+                        },
+                        {
+                            "key": "636 (Secure)",
+                            "value": "636"
+                        }
+                    ]
+                },
+                {
+                    "key": "fieldMappingGroup",
+                    "label": "Field Mapping",
+                    "styleClass": "one-line",
+                    "labelKey": "FIELD_MAPPING",
+                    "baseType": "group",
+                    "activitySettings": [
+                        {
+                            "value": "<?xml version=\"1.0\"?><Settings />",
+                            "required": true,
+                            "key": "ADResult",
+                            "label": "",
+                            "labelKey": "",
+                            "baseType": "control",
+                            "controlType": "keyValueGridControl",
+                            "outputConfig": {
+                                "type": "settings",
+                                "mainHeader": "<?xml version=\"1.0\"?>",
+                                "itemTagName": "Settings",
+                                "subRoot": "Settings",
+                                "attrsExport": [
+                                    {
+                                        "attrName": "propertyName.key",
+                                        "attrValueField": "propertyValue"
+                                    }
+                                ],
+                                "attrsImport": [
+                                    {
+                                        "attrName": "propertyName",
+                                        "attrValueField": "propertyValue"
+                                    }
+                                ]
+                            },
+                            "tableOptions": {
+                                "isRemovable": true,
+                                "isFooterTemplate": true,
+                                "rows": [
+                                    {
+                                        "propertyName": {
+                                            "key": "givenName",
+                                            "value": "First Name"
+                                        },
+                                        "propertyValue": ""
+                                    },
+                                    {
+                                        "propertyName": {
+                                            "key": "sn",
+                                            "value": "Last Name"
+                                        },
+                                        "propertyValue": ""
+                                    }
+                                ],
+                                "columns": [
+                                    {
+                                        "name": "Property Name",
+                                        "prop": "propertyName",
+                                        "isEditable": true,
+                                        "templateType": "dropdown",
+                                        "fieldToSave": "key",
+                                        "fieldToShow": "value",
+                                        "hasFooter": true
+                                    },
+                                    {
+                                        "name": "Property Value",
+                                        "prop": "propertyValue",
+                                        "templateType": "input",
+                                        "isEditable": true,
+                                        "hasFooter": true
+                                    }
+                                ],
+                                "sources": {
+                                    "propertyName": [
+                                        {
+                                            "key": "l",
+                                            "value": "City"
+                                        },
+                                        {
+                                            "key": "company",
+                                            "value": "Company"
+                                        },
+                                        {
+                                            "key": "c",
+                                            "value": "Country"
+                                        },
+                                        {
+                                            "key": "description",
+                                            "value": "Description"
+                                        },
+                                        {
+                                            "key": "displayName",
+                                            "value": "Display Name"
+                                        },
+                                        {
+                                            "key": "division",
+                                            "value": "Division"
+                                        },
+                                        {
+                                            "key": "mail",
+                                            "value": "Email"
+                                        },
+                                        {
+                                            "key": "givenName",
+                                            "value": "First Name"
+                                        },
+                                        {
+                                            "key": "ipPhone",
+                                            "value": "IP Phone"
+                                        },
+                                        {
+                                            "key": "sn",
+                                            "value": "Last Name"
+                                        },
+                                        {
+                                            "key": "manager",
+                                            "value": "Manager"
+                                        },
+                                        {
+                                            "key": "mobile",
+                                            "value": "Mobile"
+                                        },
+                                        {
+                                            "key": "physicalDeliveryOfficeName",
+                                            "value": "Office"
+                                        },
+                                        {
+                                            "key": "pager",
+                                            "value": "Pager"
+                                        },
+                                        {
+                                            "key": "telephoneNumber",
+                                            "value": "Telephone Number"
+                                        },
+                                        {
+                                            "key": "title",
+                                            "value": "Title"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "index": "1",
+            "label": "main",
+            "labelKey": null
+        }
+    }
+}

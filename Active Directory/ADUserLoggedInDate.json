@@ -1,0 +1,61 @@
+{
+  "data": {
+    "name": "AD User Last Logged in Date",
+    "description": "Active Directory User Last Logged in Date",
+    "timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "required": true,
+          "key": "ADUserName",
+          "disabled": false,
+          "styleClass": "",
+          "label": "Account Name",
+          "labelKey": "AD_USER_LAST_LOGGED_IN_DATE_USER_LOGON_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "required": false,
+          "key": 1,
+          "disabled": false,
+          "label": "new control01",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "389",
+          "required": false,
+          "key": "SecurePort",
+          "disabled": false,
+          "label": "Port",
+          "styleClass": "",
+          "labelKey": "AD_LIST_OU_SECUREPORT",
+          "baseType": "control",
+          "controlType": "autocomplete",
+          "controlOptions": [
+            {
+              "key": "389",
+              "value": "389"
+            },
+            {
+              "key": "636 (Secure)",
+              "value": "636"
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

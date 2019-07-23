@@ -1,0 +1,933 @@
+{
+  "data": {
+    "size": "m-size",
+    "name": "AD Set Property",
+    "description": "Active Directory set a user property.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "User",
+          "required": false,
+          "key": "AccountType",
+          "disabled": false,
+          "label": "Account Type",
+          "labelKey": "AD_SET_PROPERTY_ACCOUNT_TYPE",
+          "baseType": "control",
+          "styleClass": "one-line",
+          "controlType": "radiobutton",
+          "controlOptions": [
+            {
+              "label": "User",
+              "value": "User"
+            },
+            {
+              "label": "Computer",
+              "value": "Computer"
+            }
+          ]
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "ADUserName",
+          "disabled": false,
+          "label": "Name",
+          "styleClass": "",
+          "labelKey": "AD_SET_PROPERTY_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "controlOptions": []
+        },
+        {
+          "value": "newControl",
+          "required": false,
+          "key": "newControl",
+          "disabled": false,
+          "label": "newControl",
+          "styleClass": "",
+          "labelKey": "newControl",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "389",
+          "required": false,
+          "key": "SecurePort",
+          "disabled": false,
+          "label": "Port",
+          "styleClass": "",
+          "labelKey": "AD_LIST_OU_SECUREPORT",
+          "baseType": "control",
+          "controlType": "autocomplete",
+          "controlOptions": [
+            {
+              "key": "389",
+              "value": "389"
+            },
+            {
+              "key": "636 (Secure)",
+              "value": "636"
+            }
+          ]
+        },        
+        {
+          "value": "",
+          "key": "AllProperties",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "control",
+          "dynamicKeyName": "FieldsList",
+          "controlType": "hidden",
+          "controlOptions": [
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "l",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "City",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "City",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "CN",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Common Name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Common Name",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "company",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Company",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Company",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "c",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Country",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Country",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "department",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Department",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Department",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "description",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Description",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Description",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "displayName",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Display Name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Display Name",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "division",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Division",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Division",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "mail",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Email",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Email",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "employeeID",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Employee ID",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Employee ID",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "employeeNumber",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Employee Number",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Employee Number",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "employeeType",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Employee Type",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Employee Type",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "facsimileTelephoneNumber",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Fax",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Fax",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "givenName",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "First Name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "First Name",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "HomeDrive",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Home Drive",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Home Drive",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "HomeDirectory",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Home Folder",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Home Folder",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "homePhone",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Home Phone",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Home Phone",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "initials",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Initials",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Initials",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "ipPhone",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "IP Phone",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "IP Phone",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "sn",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Last Name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Last Name",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "scriptPath",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Login Script",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Login Script",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "manager",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Manager",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Manager",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "middleName",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Middle Name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Middle Name",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "mobile",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Mobile",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Mobile",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "info",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Notes",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Notes",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "physicalDeliveryOfficeName",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Office",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Office",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "pager",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Pager",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Pager",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "postOfficeBox",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "PO Box",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "PO Box",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "profilePath",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Profile Path",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Profile Path",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "roomNumber",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Room Number",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Room Number",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "st",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "State/Province",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "State/Province",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "streetAddress",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Street",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Street",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "telephoneNumber",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Telephone Number",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Telephone Number",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "title",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Title",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Title",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "wWWHomePage",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Web Page",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Web Page",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "postalCode",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Zip/Postal Code",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Zip/Postal Code",
+              "accountType": "user"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "DisplayName",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Computer name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Computer name",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "Description",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Description",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Description",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "DNSHostName",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "DNS name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "DNS name",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "Location",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Location",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Location",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "ManagedBy",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Managed by",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Managed by",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "MemberOf",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Member of",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Member of",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "OperatingSystem",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Operating system name",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Operating system name",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "OperatingSystemVersion",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Operating system version",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Operating system version",
+              "accountType": "computer"
+            },
+            {
+              "key": {
+                "entriesField": [],
+                "filterField": "",
+                "idField": "OperatingSystemServicePack",
+                "isKeyField": false,
+                "mandatoryField": false,
+                "nameField": "Service pack",
+                "typeField": "Text",
+                "isCreateField": true,
+                "isUpdateField": true,
+                "isReadOnlyField": "",
+                "isHiddenField": null,
+                "operationsField": []
+              },
+              "value": "Service pack",
+              "accountType": "computer"
+            }
+          ]
+        },
+        {
+          "isCollapse": true,
+          "isVisible": true,
+          "styleClass": [
+            "formGroup"
+          ],
+          "key": "properties",
+          "label": "Properties",
+          "labelKey": "AD_SET_PROPERTY_PROPERTIES",
+          "baseType": "group",
+          "activitySettings": [
+            {
+              "value": "",
+              "disabled": false,
+              "required": true,
+              "key": "FieldsList",
+              "specialFieldType": "mandatoryField",
+              "parsingConfig": {
+                "structureType": "json"
+              },
+              "label": "",
+              "labelKey": "",
+              "styleClass": "one-line",
+              "baseType": "control",
+              "controlType": "propertiesControl"
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

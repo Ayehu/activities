@@ -1,0 +1,329 @@
+{
+    "data": {
+        "name": "AD Get Property",
+        "description": "Active Directory get a user property.",
+        "Timeout": "00:01:00",
+        "class": [],
+        "rootSettings": {
+            "isCollapse": false,
+            "activitySettings": [
+                {
+                    "value": "User",
+                    "key": "AccountType",
+                    "disabled": false,
+                    "label": "Account Type",
+                    "labelKey": "ACCOUNT_TYPE",
+                    "baseType": "control",
+                    "styleClass": "one-line",
+                    "controlType": "radiobutton",
+                    "controlOptions": [
+                        {
+                            "label": "User",
+                            "value": "User"
+                        },
+                        {
+                            "label": "Computer",
+                            "value": "Computer"
+                        }
+                    ]
+                },
+                {
+                    "value": "",
+                    "required": true,
+                    "key": "ADUserName",
+                    "disabled": false,
+                    "styleClass": "",
+                    "label": "Account Name",
+                    "labelKey": "ACCOUNT_NAME",
+                    "baseType": "control",
+                    "controlType": "textbox",
+                    "controlOptions": []
+                },
+                {
+                    "value": "newControl",
+                    "required": false,
+                    "key": "newControl",
+                    "disabled": false,
+                    "label": "newControl",
+                    "styleClass": "",
+                    "labelKey": "newControl",
+                    "baseType": "hostGroup",
+                    "controlType": "",
+                    "controlOptions": []
+                },
+                {
+                    "value": "",
+                    "required": true,
+                    "key": "PropertyDisplay",
+                    "idFieldName": "PropertyName",
+                    "idDefaultValue": "",
+                    "label": "Property Name",
+                    "styleClass": "",
+                    "labelKey": "PROPERTY_NAME",
+                    "baseType": "control",
+                    "controlType": "autocomplete"
+                },
+                {
+                    "value": "",
+                    "key": "AllProperties",
+                    "label": "",
+                    "styleClass": "",
+                    "labelKey": "",
+                    "baseType": "control",
+                    "controlType": "hidden",
+                    "controlOptions": [
+                        {
+                            "key": "l",
+                            "value": "City",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "CN",
+                            "value": "Common Name",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "company",
+                            "value": "Company",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "c",
+                            "value": "Country",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "department",
+                            "value": "Department",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "description",
+                            "value": "Description",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "displayName",
+                            "value": "Display Name",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "division",
+                            "value": "Division",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "mail",
+                            "value": "Email",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "employeeID",
+                            "value": "Employee ID",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "employeeNumber",
+                            "value": "Employee Number",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "employeeType",
+                            "value": "Employee Type",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "facsimileTelephoneNumber",
+                            "value": "Fax",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "givenName",
+                            "value": "First Name",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "HomeDrive",
+                            "value": "Home Drive",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "HomeDirectory",
+                            "value": "Home Folder",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "homePhone",
+                            "value": "Home Phone",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "initials",
+                            "value": "Initials",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "ipPhone",
+                            "value": "IP Phone",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "sn",
+                            "value": "Last Name",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "scriptPath",
+                            "value": "Login Script",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "manager",
+                            "value": "Manager",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "middleName",
+                            "value": "Middle Name",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "mobile",
+                            "value": "Mobile",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "info",
+                            "value": "Notes",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "physicalDeliveryOfficeName",
+                            "value": "Office",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "pager",
+                            "value": "Pager",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "postOfficeBox",
+                            "value": "PO Box",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "profilePath",
+                            "value": "Profile Path",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "roomNumber",
+                            "value": "Room Number",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "st",
+                            "value": "State/Province",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "streetAddress",
+                            "value": "Street",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "telephoneNumber",
+                            "value": "Telephone Number",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "title",
+                            "value": "Title",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "wWWHomePage",
+                            "value": "Web Page",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "postalCode",
+                            "value": "Zip/Postal Code",
+                            "accountType": "user"
+                        },
+                        {
+                            "key": "DisplayName",
+                            "value": "Computer name",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "Description",
+                            "value": "Description",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "DNSHostName",
+                            "value": "DNS name",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "Location",
+                            "value": "Location",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "ManagedBy",
+                            "value": "Managed by",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "MemberOf",
+                            "value": "Member of",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "OperatingSystem",
+                            "value": "Operating system name",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "OperatingSystemVersion",
+                            "value": "Operating system version",
+                            "accountType": "computer"
+                        },
+                        {
+                            "key": "OperatingSystemServicePack",
+                            "value": "Service pack",
+                            "accountType": "computer"
+                        }
+                    ]
+                },
+                {
+                    "value": "389",
+                    "required": false,
+                    "key": "SecurePort",
+                    "disabled": false,
+                    "label": "Port",
+                    "styleClass": "",
+                    "labelKey": "AD_LIST_OU_SECUREPORT",
+                    "baseType": "control",
+                    "controlType": "autocomplete",
+                    "controlOptions": [
+                        {
+                            "key": "389",
+                            "value": "389"
+                        },
+                        {
+                            "key": "636 (Secure)",
+                            "value": "636"
+                        }
+                    ]
+                }
+             ],
+            "index": "1",
+            "label": "main",
+            "labelKey": null
+        }
+    }
+}
