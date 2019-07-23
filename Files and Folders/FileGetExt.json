@@ -1,0 +1,1 @@
+{"data":{"name":"Get File Extension","description":"Gets a file complete path and returns only the extension.","Timeout":"00:01:00","class":[],"rootSettings":{"isCollapse":false,"activitySettings":[{"key":"ThePath","required":true,"label":"Name","labelKey":"NAME","baseType":"control","controlType":"textbox","value":""}],"index":"1","label":"main","labelKey":null}}}
