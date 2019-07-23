@@ -1,0 +1,82 @@
+{
+	"innerCode": 200,
+	"data": {
+		"size": "m-size",
+		"name": "AWS Assume Role",
+		"type": "aws",
+		"disableModuleSelection": true,
+		"description": "AWS Assume Role",
+		"Timeout": "00:01:00",
+		"class": [],
+		"rootSettings": {
+			"isCollapse": false,
+			"activitySettings": [
+				{
+					"value": "",
+					"disabled": false,
+					"required": true,
+					"key": "SelectedModuleName",
+					"idFieldName": "SelectedModuleID",
+					"label": "Module Name",
+					"styleClass": "one-line",
+					"baseType": "control",
+					"controlType": "dropdown",
+					"autocompleteParams": {
+						"extraParams": 31,
+						"entityType": 36
+					},
+					"additionalParams": {
+						"dependentFields": [
+							"region",
+							"sessionName",
+							"roleArn",
+							"isOverride"
+						]
+					}
+				},
+				{
+					"value": "",
+					"disabled": true,
+					"required": true,
+					"key": "region",
+					"label": "Region",
+					"baseType": "control",
+					"controlType": "autocomplete",
+					"autocompleteParams": {
+						"entityType": 62
+					}
+				},
+				{
+					"value": "",
+					"required": true,
+					"key": "roleArn",
+					"label": "Role ARN",
+					"labelKey": "ROLE_ARN_VALUE",
+					"baseType": "control",
+					"controlType": "textbox"
+				},
+				{
+					"value": "",
+					"disabled": true,
+					"required": true,
+					"key": "sessionName",
+					"label": "Session Name",
+					"baseType": "control",
+					"controlType": "textbox"
+				},
+				{
+					"baseType": "connectionParameters",
+					"customKeys": {
+						"hrStyleClass": "marginTp15"
+					},
+					"disabled": true,
+					"controlType": ""
+				}
+			],
+			"index": "1",
+			"label": "main",
+			"labelKey": null
+		}
+	},
+	"message": "SUCCESS"
+}
