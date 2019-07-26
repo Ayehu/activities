@@ -1,1 +1,94 @@
-{"data":{"name":"AD Move Account","description":"Active Directory move account.","Timeout":"00:01:00","class":[],"rootSettings":{"isCollapse":false,"activitySettings":[{"value":"User","required":false,"key":"AccountType","disabled":false,"label":"Account Type","labelKey":"AD_MOVE_ACCOUNT_ACCOUNT_TYPE","baseType":"control","styleClass":"one-line","controlType":"radiobutton","controlOptions":[{"label":"User","value":"User"},{"label":"Computer","value":"Computer"}]},{"value":"","required":true,"key":"ADUserName","disabled":false,"label":"Name","styleClass":"","labelKey":"AD_MOVE_ACCOUNT_NAME","baseType":"control","controlType":"textbox","controlOptions":[]},{"value":"","required":true,"key":"Path","disabled":false,"label":"Path","styleClass":"","labelKey":"AD_MOVE_ACCOUNT_PATH","baseType":"control","controlType":"textbox","controlOptions":[]},{"value":"newControl","required":false,"key":"newControl","disabled":false,"label":"newControl","styleClass":"","labelKey":"newControl","baseType":"hostGroup","controlType":"","controlOptions":[]},{"value":"389","required":false,"key":"SecurePort","disabled":false,"label":"Port","styleClass":"","labelKey":"AD_LIST_OU_SECUREPORT","baseType":"control","controlType":"autocomplete","controlOptions":[{"key":"389","value":"389"},{"key":"636","value":"636"}]}],"index":"1","label":"main","labelKey":null}}}
+{
+  "data": {
+    "name": "AD Move Account",
+    "description": "Active Directory move account.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "User",
+          "required": false,
+          "key": "AccountType",
+          "styleClass": "one-line",
+          "label": "Account Type",
+          "labelKey": "AD_MOVE_ACCOUNT_ACCOUNT_TYPE",
+          "baseType": "control",
+          "controlType": "radiobutton",
+          "controlOptions": [
+            {
+              "label": "User",
+              "value": "User"
+            },
+            {
+              "label": "Computer",
+              "value": "Computer"
+            }
+          ],
+          "disabled": false
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "ADUserName",
+          "label": "Name",
+          "labelKey": "AD_MOVE_ACCOUNT_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "disabled": false,
+          "controlOptions": [],
+          "styleClass": ""
+        },
+        {
+          "value": "",
+          "key": "Path",
+          "label": "Path",
+          "labelKey": "AD_MOVE_ACCOUNT_PATH",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "value": "newControl",
+          "required": false,
+          "key": "newControl",
+          "disabled": false,
+          "label": "newControl",
+          "styleClass": "",
+          "labelKey": "newControl",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "389",
+          "required": false,
+          "key": "SecurePort",
+          "disabled": false,
+          "label": "Port",
+          "styleClass": "",
+          "labelKey": "AD_LIST_OU_SECUREPORT",
+          "baseType": "control",
+          "controlType": "autocomplete",
+          "controlOptions": [
+            {
+              "key": "389",
+              "value": "389"
+            },
+            {
+              "key": "636",
+              "value": "636"
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
