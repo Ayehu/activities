@@ -1,1 +1,93 @@
-{"data":{"name":"Oracle Query","description":"Performs a database query on Oracle Server.","Timeout":"00:01:00","size":"l-size","class":[],"rootSettings":{"isCollapse":false,"activitySettings":[{"value":"","required":false,"key":"Query","disabled":false,"styleClass":"xl-textarea","label":"Query","labelKey":"ORACLE_QUERY_QUERY","baseType":"control","controlType":"textarea","controlOptions":[]},{"value":"","required":true,"key":"ConnectionStringTextBox","disabled":false,"label":"Connection String","styleClass":"xm-textarea","labelKey":"ORACLE_QUERY_CONNECTION_STRING","baseType":"control","controlType":"textarea","controlOptions":[]},{"value":"","required":false,"key":"isUserAuthenticate","disabled":false,"label":"User Authentication","styleClass":"","labelKey":"ORACLE_QUERY_USER_AUTHENTICATION","baseType":"control","controlType":"checkbox","controlOptions":[],"checked":false},{"value":"","required":true,"key":"UserName","disabled":true,"label":"User Name","styleClass":"","labelKey":"ORACLE_QUERY_USER_NAME","baseType":"control","controlType":"textbox","controlOptions":[]},{"value":"","required":true,"key":"Password","disabled":true,"label":"Password","styleClass":"","labelKey":"ORACLE_QUERY_PASSWORD","baseType":"control","controlType":"password","encrypt":true,"controlOptions":[]},{"value":"","required":false,"key":"SiteName","disabled":false,"label":"Run from site","styleClass":"","labelKey":"ORACLE_QUERY_RUN_FROM_SITE","baseType":"control","controlType":"hidden","controlOptions":[""]}],"index":"1","label":"main","labelKey":null}}}
+{
+  "data": {
+    "name": "Oracle Query",
+    "description": "Performs a database query on Oracle Server.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "required": false,
+          "key": "Query",
+          "label": "Query",
+          "labelKey": "ORACLE_QUERY_QUERY",
+          "baseType": "control",
+          "controlType": "textarea",
+          "controlOptions": [],
+          "disabled": false,
+          "styleClass": "xl-textarea"
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "ConnectionStringTextBox",
+          "label": "Connection String",
+          "labelKey": "ORACLE_QUERY_CONNECTION_STRING",
+          "baseType": "control",
+          "controlType": "textarea",
+          "disabled": false,
+          "styleClass": "xm-textarea",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "isUserAuthenticate",
+          "label": "User Authentication",
+          "labelKey": "ORACLE_QUERY_USER_AUTHENTICATION",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": [],
+          "checked": false
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "UserName",
+          "label": "User Name",
+          "labelKey": "ORACLE_QUERY_USER_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "disabled": true,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "Password",
+          "label": "Password",
+          "labelKey": "ORACLE_QUERY_PASSWORD",
+          "baseType": "control",
+          "controlType": "password",
+          "disabled": true,
+          "styleClass": "",
+          "encrypt": true,
+          "controlOptions": []
+        },
+        {
+          "key": "SiteName",
+          "label": "Run from site",
+          "labelKey": "ORACLE_QUERY_RUN_FROM_SITE",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": [
+            ""
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    },
+    "size": "l-size"
+  }
+}
