@@ -1,1 +1,89 @@
-{"data":{"name":"TSQL Query","description":"Performs a database query on TSQL Server.","Timeout":"00:01:00","class":[],"size":"l-size","rootSettings":{"isCollapse":false,"activitySettings":[{"value":"","required":true,"key":"Query","disabled":false,"styleClass":"xl-textarea","label":"Query","labelKey":"TSQL_QUERY_QUERY","baseType":"control","controlType":"textarea","controlOptions":[]},{"value":"","required":true,"key":"ConnectionStringTextBox","disabled":false,"label":"Connection String","styleClass":"xm-textarea","labelKey":"TSQL_QUERY_CONNECTION_STRING","baseType":"control","controlType":"textarea","controlOptions":[]},{"value":"","required":false,"key":"isUserAuthenticate","disabled":false,"label":"User Authentication","styleClass":"","labelKey":"TSQL_QUERY_USER_AUTHENTICATION","baseType":"control","controlType":"checkbox","controlOptions":[],"checked":false},{"value":"","required":true,"key":"UserName","disabled":true,"label":"User Name","styleClass":"","labelKey":"TSQL_QUERY_USER_NAME","baseType":"control","controlType":"textbox","controlOptions":[]},{"value":"","required":true,"key":"Password","label":"Password","styleClass":"","labelKey":"TSQL_QUERY_PASSWORD","baseType":"control","controlType":"password","encrypt":true,"controlOptions":[]},{"value":"","key":"SiteName","disabled":false,"label":"Run from site","styleClass":"","labelKey":"MYSQL_STATEMENT_RUN_FROM_SITE","baseType":"control","controlType":"hidden","controlOptions":[]}],"index":"1","label":"main","labelKey":null}}}
+{
+  "data": {
+    "name": "TSQL Query",
+    "description": "Performs a database query on TSQL Server.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "required": true,
+          "key": "Query",
+          "label": "Query",
+          "labelKey": "TSQL_QUERY_QUERY",
+          "baseType": "control",
+          "controlType": "textarea",
+          "controlOptions": [],
+          "disabled": false,
+          "styleClass": "xl-textarea"
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "ConnectionStringTextBox",
+          "label": "Connection String",
+          "labelKey": "TSQL_QUERY_CONNECTION_STRING",
+          "baseType": "control",
+          "controlType": "textarea",
+          "disabled": false,
+          "styleClass": "xm-textarea",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "isUserAuthenticate",
+          "label": "User Authentication",
+          "labelKey": "TSQL_QUERY_USER_AUTHENTICATION",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": [],
+          "checked": false
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "UserName",
+          "label": "User Name",
+          "labelKey": "TSQL_QUERY_USER_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "disabled": true,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "Password",
+          "label": "Password",
+          "labelKey": "TSQL_QUERY_PASSWORD",
+          "baseType": "control",
+          "controlType": "password",
+          "styleClass": "",
+          "encrypt": true,
+          "controlOptions": []
+        },
+        {
+          "key": "SiteName",
+          "label": "Run from site",
+          "labelKey": "MYSQL_STATEMENT_RUN_FROM_SITE",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "",
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    },
+    "size": "l-size"
+  }
+}
