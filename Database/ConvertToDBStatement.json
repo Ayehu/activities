@@ -1,1 +1,133 @@
-{"data":{"name":"Convert To DB Statement","description":"Converts result set into a db insert statement.","Timeout":"00:01:00","class":[],"rootSettings":{"isCollapse":false,"activitySettings":[{"key":"DbType","label":"Database Type","labelKey":"Database_Type","baseType":"control","controlType":"dropdown","value":"","required":true,"controlOptions":[{"key":"DB2","value":"DB2"},{"key":"MySql","value":"MySql"},{"key":"Oracle","value":"Oracle"},{"key":"TSQL","value":"TSQL"}],"valueChangesActions":{"DB2":{"enable":["SchemaName","TableSpace"]},"MySql":{"disable":["SchemaName","TableSpace"],"setValue":{"SchemaName":"","TableSpace":""}},"Oracle":{"disable":["SchemaName","TableSpace"],"setValue":{"SchemaName":"","TableSpace":""}},"TSQL":{"disable":["SchemaName","TableSpace"],"setValue":{"SchemaName":"","TableSpace":""}}}},{"key":"ResultSetData","label":"Table Variable","labelKey":"TABLE_VARIABLE","baseType":"control","controlType":"textbox","value":"","required":true},{"key":"TableName","label":"Table Name","labelKey":"TABLE_NAME","baseType":"control","controlType":"textbox","value":"","required":true},{"key":"SchemaName","label":"Schema Name","labelKey":"SCHEMA_NAME","baseType":"control","controlType":"textbox","required":true,"value":""},{"key":"TableSpace","label":"Table Space","labelKey":"TABLE_SPACE","baseType":"control","controlType":"textbox","required":true,"value":""},{"key":"SiteName","label":"","labelKey":"","baseType":"control","controlType":"hidden","value":"{x:Null}"},{"key":"SiteId","label":"","labelKey":"","baseType":"control","controlType":"hidden","value":"-1"}],"index":"1","label":"main","labelKey":null}}}
+{
+  "data": {
+    "name": "Convert To DB Statement",
+    "description": "Converts result set into a db insert statement.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "required": true,
+          "key": "DbType",
+          "label": "Database Type",
+          "labelKey": "Database_Type",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "controlOptions": [
+            {
+              "value": "DB2",
+              "key": "DB2"
+            },
+            {
+              "value": "MySql",
+              "key": "MySql"
+            },
+            {
+              "key": "Oracle",
+              "value": "Oracle"
+            },
+            {
+              "key": "TSQL",
+              "value": "TSQL"
+            }
+          ],
+          "valueChangesActions": {
+            "DB2": {
+              "enable": [
+                "SchemaName",
+                "TableSpace"
+              ]
+            },
+            "MySql": {
+              "disable": [
+                "SchemaName",
+                "TableSpace"
+              ],
+              "setValue": {
+                "SchemaName": "",
+                "TableSpace": ""
+              }
+            },
+            "Oracle": {
+              "disable": [
+                "SchemaName",
+                "TableSpace"
+              ],
+              "setValue": {
+                "SchemaName": "",
+                "TableSpace": ""
+              }
+            },
+            "TSQL": {
+              "disable": [
+                "SchemaName",
+                "TableSpace"
+              ],
+              "setValue": {
+                "SchemaName": "",
+                "TableSpace": ""
+              }
+            }
+          }
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "ResultSetData",
+          "label": "Table Variable",
+          "labelKey": "TABLE_VARIABLE",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "value": "",
+          "key": "TableName",
+          "label": "Table Name",
+          "labelKey": "TABLE_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "SchemaName",
+          "label": "Schema Name",
+          "labelKey": "SCHEMA_NAME",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "TableSpace",
+          "label": "Table Space",
+          "labelKey": "TABLE_SPACE",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "key": "SiteName",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "{x:Null}"
+        },
+        {
+          "key": "SiteId",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "-1"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
