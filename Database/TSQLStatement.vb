@@ -16,7 +16,7 @@ Namespace Ayehu.Sdk.ActivityCreation
 
 
         Public Query As String
-        Public ConnectionString As String
+        Public ConnectionStringTextBox As String
         Public UserName As String
         Public Password As String
         Public TimeInSeconds As String
@@ -40,10 +40,10 @@ Namespace Ayehu.Sdk.ActivityCreation
             End If
 
 
-            If ConnectionString.IndexOf("DSN=") >= 0 Or ConnectionString.IndexOf("Driver=") >= 0 Then
-                ConnectionString = ConnectionString.Replace("User Id", "UID")
-                ConnectionString = ConnectionString.Replace("Password", "PWD")
-                Dim ocsb As New OdbcConnectionStringBuilder(ConnectionString)
+            If ConnectionStringTextBox.IndexOf("DSN=") >= 0 Or ConnectionStringTextBox.IndexOf("Driver=") >= 0 Then
+                ConnectionStringTextBox = ConnectionStringTextBox.Replace("User Id", "UID")
+                ConnectionStringTextBox = ConnectionStringTextBox.Replace("Password", "PWD")
+                Dim ocsb As New OdbcConnectionStringBuilder(ConnectionStringTextBox)
                 If Not String.IsNullOrEmpty(UserName) Then
                     ocsb("Uid") = UserName
                     ocsb("Pwd") = Password
@@ -59,7 +59,7 @@ Namespace Ayehu.Sdk.ActivityCreation
                     conn.Close()
                 End Using
             Else
-                Dim csb As New SqlConnectionStringBuilder(ConnectionString)
+                Dim csb As New SqlConnectionStringBuilder(ConnectionStringTextBox)
                 If Not String.IsNullOrEmpty(UserName) Then
                     csb.UserID = UserName
                     csb.Password = Password
