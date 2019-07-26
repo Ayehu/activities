@@ -15,7 +15,7 @@ Namespace Ayehu.Sdk.ActivityCreation
 
 
         Public Query As String
-        Public ConnectionString As String
+        Public ConnectionStringTextBox As String
         Public UserName As String
         Public Password As String
         Public TimeInSeconds As String
@@ -40,17 +40,17 @@ Namespace Ayehu.Sdk.ActivityCreation
 
             If Not String.IsNullOrEmpty(UserName) Then
                 Try
-                    Dim ocsb As New OracleConnectionStringBuilder(ConnectionString)
+                    Dim ocsb As New OracleConnectionStringBuilder(ConnectionStringTextBox)
                     ocsb.UserID = UserName
                     ocsb.Password = Password
-                    ConnectionString = ocsb.ConnectionString
+                    ConnectionStringTextBox = ocsb.ConnectionString
                 Catch ex As Exception
 
                 End Try
             End If
 
             If OracleConnection.IsAvailable = False OrElse OracleConnection.IsAvailable = True Then
-                Using conn As New OracleConnection(ConnectionString)
+                Using conn As New OracleConnection(ConnectionStringTextBox)
                     conn.Open()
                     Using cmd As New OracleCommand(Query, conn)
                         cmd.CommandTimeout = TimeInSeconds
