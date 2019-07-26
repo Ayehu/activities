@@ -15,7 +15,7 @@ Namespace Ayehu.Sdk.ActivityCreation
 
 
         Public Query As String
-        Public ConnectionString As String
+        Public ConnectionStringTextBox As String
         Public UserName As String
         Public Password As String
         Public TimeInSeconds As String
@@ -41,7 +41,7 @@ Namespace Ayehu.Sdk.ActivityCreation
 
             Dim SELECT_STRING As String = Query
 
-            Dim csb As New MySqlConnectionStringBuilder(ConnectionString)
+            Dim csb As New MySqlConnectionStringBuilder(ConnectionStringTextBox)
             If Not String.IsNullOrEmpty(UserName) Then
                 csb.UserID = UserName
                 csb.Password = Password
