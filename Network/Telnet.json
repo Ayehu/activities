@@ -1,0 +1,38 @@
+{
+  "data": {
+    "name": "Telnet",
+    "description": "Run a Telnet command line",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "HostName",
+          "label": "Host Name",
+          "baseType": "control",
+          "labelKey": "TELNET_HOST_NAME",
+          "controlType": "autocompleteWithPlus",
+          "value": "",
+          "required": true,
+          "idFieldName": "HostId",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "Port",
+          "label": "Port",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "labelKey": "TELNET_HOST_PORT"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

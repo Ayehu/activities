@@ -1,0 +1,199 @@
+{
+  "data": {
+    "name": "Send Syslog Message",
+    "description": "Send Syslog Message",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "HostName",
+          "label": "Host Name",
+          "baseType": "control",
+          "labelKey": "",
+          "controlType": "autocompleteWithPlus",
+          "value": "",
+          "required": true,
+          "idFieldName": "HostId",
+          "idDefaultValue": -2,
+          "autocompleteParams": {
+            "entityType": 2
+          },
+          "disabled": false,
+          "styleClass": ""
+        },
+        {
+          "key": "Facility",
+          "label": "Facility",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "value": "Kernel",
+          "styleClass": "",
+          "controlOptions": [
+            {
+              "key": "Kernel",
+              "value": "Kernel"
+            },
+            {
+              "key": "User",
+              "value": "User"
+            },
+            {
+              "key": "Mail",
+              "value": "Mail"
+            },
+            {
+              "key": "Daemon",
+              "value": "Daemon"
+            },
+            {
+              "key": "Auth",
+              "value": "Auth"
+            },
+            {
+              "key": "Syslog",
+              "value": "Syslog"
+            },
+            {
+              "key": "Lpr",
+              "value": "Lpr"
+            },
+            {
+              "key": "News",
+              "value": "News"
+            },
+            {
+              "key": "UUCP",
+              "value": "UUCP"
+            },
+            {
+              "key": "Cron",
+              "value": "Cron"
+            },
+            {
+              "key": "System0",
+              "value": "System0"
+            },
+            {
+              "key": "System1",
+              "value": "System1"
+            },
+            {
+              "key": "System2",
+              "value": "System2"
+            },
+            {
+              "key": "System3",
+              "value": "System3"
+            },
+            {
+              "key": "System4",
+              "value": "System4"
+            },
+            {
+              "key": "System5",
+              "value": "System5"
+            },
+            {
+              "key": "Local0",
+              "value": "Local0"
+            },
+            {
+              "key": "Local1",
+              "value": "Local1"
+            },
+            {
+              "key": "Local2",
+              "value": "Local2"
+            },
+            {
+              "key": "Local3",
+              "value": "Local3"
+            },
+            {
+              "key": "Local4",
+              "value": "Local4"
+            },
+            {
+              "key": "Local5",
+              "value": "Local5"
+            },
+            {
+              "key": "Local6",
+              "value": "Local6"
+            },
+            {
+              "key": "Local7",
+              "value": "Local7"
+            }
+          ]
+        },
+        {
+          "key": "Level",
+          "label": "Level",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "value": "Emergency",
+          "controlOptions": [
+            {
+              "key": "Emergency",
+              "value": "Emergency"
+            },
+            {
+              "key": "Alert",
+              "value": "Alert"
+            },
+            {
+              "key": "Critical",
+              "value": "Critical"
+            },
+            {
+              "key": "Error",
+              "value": "Error"
+            },
+            {
+              "key": "Warning",
+              "value": "Warning"
+            },
+            {
+              "key": "Notice",
+              "value": "Notice"
+            },
+            {
+              "key": "Information",
+              "value": "Information"
+            },
+            {
+              "key": "Debug",
+              "value": "Debug"
+            }
+          ],
+          "styleClass": ""
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "Message",
+          "label": "Message",
+          "styleClass": "xl-textarea",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "textarea"
+        },
+        {
+          "value": "514",
+          "required": true,
+          "key": "Port",
+          "label": "Port",
+          "styleClass": "",
+          "baseType": "control",
+          "controlType": "textbox"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
