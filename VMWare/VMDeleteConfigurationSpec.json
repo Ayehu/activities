@@ -1,0 +1,35 @@
+{
+  "data": {
+    "name": "VM Delete Configuration Spec",
+    "description": "Delete VM specification",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "SpecName",
+          "label": "Specificatoin Name",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "labelKey": "VM_DELETE_CONFIGURATION_SPEC_SPEC_NAME"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "data": {
+    "name": "VM Delete All Snapshots",
+    "description": "Delete all snapshots of a virtual machine",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "VMName",
+          "label": "VM Name/UUID",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "required": true,
+          "labelKey": "VM_STANDBY_VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "SnapshotName",
+          "label": "Snapshot Name",
+          "labelKey": "VM_DELETE_ALL_SNAPSHOTS_SNAPSHOT_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "DeleteChildren",
+          "label": "Delete Children",
+          "labelKey": "VM_DELETE_ALL_SNAPSHOTS_DELETE_CHILDREN",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "value": false
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

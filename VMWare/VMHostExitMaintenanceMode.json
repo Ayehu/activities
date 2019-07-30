@@ -1,0 +1,38 @@
+{
+  "data": {
+    "name": "VM Host Exit Maintenance Mode",
+    "description": "Cause host to exit maintenance mode",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "TargetHostName",
+          "label": "Target Host Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "required": true,
+          "labelKey": "VM_SUSPEND_VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

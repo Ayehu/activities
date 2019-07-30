@@ -1,0 +1,55 @@
+{
+  "data": {
+    "name": "VM Clone",
+    "description": "Clone the specified virtual machine",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "VMName",
+          "label": "VM Name/UUID",
+          "labelKey": "VM _CLONE_VM_NAME_UUID",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "required": true,
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "CloneVMName",
+          "label": "Clone Name",
+          "labelKey": "VM _CLONE_CLONE_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "SpecName",
+          "label": "Spec Name",
+          "labelKey": "VM _CLONE_SPEC_NAME",
+          "baseType": "control",
+          "controlType": "textbox"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

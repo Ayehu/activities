@@ -1,0 +1,38 @@
+{
+  "data": {
+    "name": "VM Exists",
+    "description": "Check existence of a virtual machine by name",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "VMName",
+          "label": "VM Name/UUID",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "required": true,
+          "labelKey": "VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

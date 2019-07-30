@@ -1,0 +1,99 @@
+{
+  "data": {
+    "name": "VM Unmark Template",
+    "description": "Unmark a virtual machine as a template",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "Template Name/UUID",
+          "labelKey": "VM_UNMARK_TEMPLATE_TEMPLATE_NAME_UUID",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "value": "",
+          "required": true,
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "value": "pool",
+          "key": "type",
+          "styleClass": "one-line",
+          "label": "Type",
+          "labelKey": "VM_UNMARK_TEMPLATE_TYPE",
+          "baseType": "control",
+          "controlType": "radiobutton",
+          "controlOptions": [
+            {
+              "label": "Pool",
+              "value": "pool"
+            },
+            {
+              "label": "Host",
+              "value": "host"
+            }
+          ],
+          "valueChangesActions": {
+            "pool": {
+              "disable": [
+                "HostSystemName"
+              ],
+              "enable": [
+                "ResourcePool"
+              ],
+              "setValue": {
+                "HostSystemName": ""
+              }
+            },
+            "host": {
+              "enable": [
+                "HostSystemName"
+              ],
+              "disable": [
+                "ResourcePool"
+              ],
+              "setValue": {
+                "ResourcePool": ""
+              }
+            }
+          }
+        },
+        {
+          "key": "ResourcePool",
+          "label": "Resource Pool",
+          "labelKey": "VM_UNMARK_TEMPLATE_RESOURCE_POOL",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "HostSystemName",
+          "label": "Host Name",
+          "labelKey": "VM_UNMARK_TEMPLATE_HOST_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

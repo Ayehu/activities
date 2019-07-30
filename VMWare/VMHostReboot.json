@@ -1,0 +1,46 @@
+{
+  "data": {
+    "name": "VM Host Reboot",
+    "description": "Reboot a host",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "key": "TargetHostName",
+          "label": "Target Host Name",
+          "labelKey": "VM_SUSPEND_VM_NAME_UUID",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "autocompleteParams": {
+            "entityType": 2
+          },
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "ForceReboot",
+          "label": "Force reboot",
+          "labelKey": "VM_HOST_REBOOT_FORCE_REBOOT",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "value": false
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

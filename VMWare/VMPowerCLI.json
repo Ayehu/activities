@@ -1,0 +1,36 @@
+{
+  "data": {
+    "name": "VM Power CLI",
+    "description": "Execute command in Power CLI.",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "key": "Command",
+          "label": "Command",
+          "labelKey": "VM_POWER_CLI_COMMAND",
+          "baseType": "control",
+          "controlType": "textarea",
+          "value": "",
+          "required": true,
+          "styleClass": "xl-textarea"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

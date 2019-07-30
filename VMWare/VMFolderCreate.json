@@ -1,0 +1,44 @@
+{
+  "data": {
+    "name": "VM Folder Create",
+    "description": "Create a new folder",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "ParentFolder",
+          "label": "Parent Folder",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "labelKey": "VM_CREATE_FOLDER_PARENT_FOLDER"
+        },
+        {
+          "key": "NewFolder",
+          "label": "New Folder",
+          "labelKey": "VM_CREATE_FOLDER_NEW_FOLDER",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
