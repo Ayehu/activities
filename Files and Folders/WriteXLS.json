@@ -1,0 +1,51 @@
+{
+  "data": {
+    "name": "Write Excel",
+    "description": "Write a result set as an Excel file",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "NewValue",
+          "label": "Table Variable",
+          "baseType": "control",
+          "labelKey": "WRITE_XLS_RESULTSET",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "Path",
+          "label": "Path",
+          "labelKey": "WRITE_XLS_PATH",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": 1,
+          "label": "new control01",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "value": "",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

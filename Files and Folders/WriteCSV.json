@@ -1,0 +1,63 @@
+{
+  "data": {
+    "name": "Write CSV",
+    "description": "Write a table as a CSV file",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "NewValue",
+          "label": "Table Variable",
+          "baseType": "control",
+          "labelKey": "WRITE_CSV_TABLE",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "Path",
+          "required": true,
+          "label": "Path",
+          "labelKey": "WRITE_CSV_PATH",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "key": "Delimiter",
+          "requiredWithoutTrim": true,
+          "label": "Delimiter",
+          "labelKey": "WRITE_CSV_DELIMITER",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ","
+        },
+        {
+          "key": "IgnoreHeaders",
+          "label": "Ignore Headers",
+          "labelKey": "WRITE_CSV_IGNORE_HEADERS",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "value": false,
+          "convertBoolTo": "number"
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "disabled": false,
+          "label": "new control11",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

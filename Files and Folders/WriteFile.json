@@ -1,0 +1,53 @@
+{
+  "data": {
+    "name": "Write File",
+    "description": "Write text to a file",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "NewValue",
+          "label": "Value",
+          "baseType": "control",
+          "labelKey": "WRITE_FILE_VALUE",
+          "controlType": "textarea",
+          "value": "",
+          "required": true,
+          "styleClass": "xl-textarea"
+        },
+        {
+          "key": "IsAppend",
+          "label": "Append to File",
+          "labelKey": "WRITE_FILE_APPEND_TO_FILE",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "value": ""
+        },
+        {
+          "key": "Path",
+          "label": "Path",
+          "labelKey": "WRITE_FILE_PATH",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "hostGroup1",
+          "label": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "data": {
+    "name": "Read File",
+    "description": "Read the File in the Specific Path.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "labelKey": "READ_FILE_PATH",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "LinesToRead",
+          "label": "Number of Lines",
+          "labelKey": "READ_FILE_LINE_COUNTER",
+          "baseType": "control",
+          "value": "",
+          "controlType": "textbox",
+          "styleClass": "",
+          "controlOptions": [],
+          "disabled": false,
+          "required": false
+        },
+        {
+          "value": "Top",
+          "required": true,
+          "key": "ReadingDirection",
+          "disabled": false,
+          "label": "Direction",
+          "styleClass": "",
+          "labelKey": "READ_FILE_DIRECTION",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "controlOptions": [
+            {
+              "key": "Top",
+              "value": "Top"
+            },
+            {
+              "key": "Bottom",
+              "value": "Bottom"
+            }
+          ]
+        },
+        {
+          "value": "",
+          "required": false,
+          "key": "LineFilter",
+          "disabled": false,
+          "label": "Line Contains",
+          "styleClass": "",
+          "labelKey": "READ_FILE_LINE_CONTAINS",
+          "baseType": "control",
+          "controlType": "textbox",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "required": false,
+          "key": "newControl",
+          "disabled": false,
+          "label": "new control31",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

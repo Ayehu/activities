@@ -1,0 +1,52 @@
+{
+  "data": {
+    "name": "Read CSV",
+    "description": "Read CSV file",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "labelKey": "READ_CSV_PATH",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "Delimiter",
+          "label": "Delimiter",
+          "labelKey": "READ_CSV_DELIMITER",
+          "baseType": "control",
+          "value": "",
+          "controlType": "textbox",
+          "styleClass": "",
+          "controlOptions": [],
+          "requiredWithoutTrim": true,
+          "disabled": false
+        },
+        {
+          "value": "",
+          "required": false,
+          "key": "hostGroup1",
+          "disabled": false,
+          "label": "new control11",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

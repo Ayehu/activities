@@ -1,0 +1,35 @@
+{
+  "data": {
+    "name": "Delete File",
+    "description": "Deletes a file in a specified location",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "labelKey": "DELETE_FILE_PATH",
+          "value": "",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "key": "newcontrol11",
+          "label": "new control11",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "value": "",
+          "controlType": "",
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "data": {
+    "name": "File Accessed Date",
+    "description": "Gets the file last accessed date.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "labelKey": "PATH",
+          "value": "",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "key": "hostGroup",
+          "label": "new control11",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "value": "",
+          "controlType": "",
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

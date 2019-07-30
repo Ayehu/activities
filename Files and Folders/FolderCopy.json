@@ -1,0 +1,108 @@
+{
+  "data": {
+    "name": "Copy Folder",
+    "description": "Copy a folder from a source location to a destination location.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "source",
+          "label": "Source",
+          "baseType": "group",
+          "labelKey": "SOURCE",
+          "isCollapse": true,
+          "isVisible": true,
+          "styleClass": [
+            "formGroup"
+          ],
+          "activitySettings": [
+            {
+              "value": "",
+              "required": true,
+              "key": "SrcPath",
+              "label": "Path",
+              "styleClass": "",
+              "labelKey": "PATH",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            },
+            {
+              "value": "",
+              "required": false,
+              "key": "newControl_1",
+              "disabled": false,
+              "label": "newControl",
+              "styleClass": "",
+              "labelKey": "newControl",
+              "baseType": "hostGroup",
+              "customKeys": {
+                "hostName": "SrcHostName",
+                "userName": "SrcUserName",
+                "password": "SrcPassword",
+                "hostId": "SrcHostId"
+              },
+              "controlType": ""
+            },
+            {
+              "checked": true,
+              "value": "",
+              "key": "SubFolders",
+              "label": "Include Subfolders",
+              "styleClass": "",
+              "labelKey": "INCLUDE_SUBFOLDERS",
+              "baseType": "control",
+              "controlType": "checkbox",
+              "convertBoolTo": "number"
+            }
+          ]
+        },
+        {
+          "key": "destination",
+          "label": "Destination",
+          "labelKey": "DESTINATION",
+          "baseType": "group",
+          "styleClass": [
+            "formGroup"
+          ],
+          "isCollapse": true,
+          "isVisible": true,
+          "activitySettings": [
+            {
+              "value": "",
+              "required": true,
+              "key": "DstPath",
+              "label": "Path",
+              "styleClass": "",
+              "labelKey": "PATH",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            },
+            {
+              "value": "",
+              "required": false,
+              "key": "newControl_2",
+              "label": "newControl",
+              "styleClass": "",
+              "labelKey": "newControl",
+              "baseType": "hostGroup",
+              "customKeys": {
+                "hostName": "DstHostName",
+                "userName": "DstUserName",
+                "password": "DstPassword",
+                "hostId": "DstHostId"
+              },
+              "controlType": ""
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

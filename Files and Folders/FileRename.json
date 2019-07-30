@@ -1,0 +1,53 @@
+{
+  "data": {
+    "name": "Rename File",
+    "description": "Rename a file",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "labelKey": "RENAME_FILE_PATH",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "FileName",
+          "label": "File Name",
+          "labelKey": "RENAME_FILE_FILE_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "key": "NewFileName",
+          "label": "New File Name",
+          "labelKey": "RENAME_FILE_NEW_FILE_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
