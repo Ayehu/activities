@@ -1,0 +1,40 @@
+{
+  "data": {
+    "name": "Application Pool Recycle",
+    "description": "Restarts the Application Pool",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "ApplicationPoolName",
+          "label": "Pool Name",
+          "baseType": "control",
+          "labelKey": "APPLICATION_POOL_RECYCLE_POOL_NAME",
+          "controlType": "textbox",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": [],
+          "required": true,
+          "disabled": false
+        },
+        {
+          "value": "",
+          "required": false,
+          "key": "newControl",
+          "disabled": false,
+          "styleClass": "",
+          "label": "newControl",
+          "labelKey": "APPLICATION_POOL_RECYCLE_NEWCONTROL",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    },
+    "timeout": null
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "data": {
+    "name": "HTTP Request",
+    "description": "Use to send HTTP request and return the result.",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "urlGroup",
+          "label": "URL",
+          "baseType": "group",
+          "styleClass": [
+            "formGroup"
+          ],
+          "isCollapse": true,
+          "isVisible": true,
+          "activitySettings": [
+            {
+              "value": "",
+              "required": true,
+              "key": "Url",
+              "label": "URL",
+              "baseType": "control",
+              "controlType": "textarea"
+            },
+            {
+              "value": "",
+              "order": 1,
+              "key": "UserName",
+              "label": "User Name",
+              "baseType": "control",
+              "controlType": "textbox"
+            },
+            {
+              "value": "",
+              "key": "Password",
+              "label": "Password",
+              "baseType": "control",
+              "controlType": "password"
+            }
+          ]
+        },
+        {
+          "key": "requestGroup",
+          "label": "Request",
+          "baseType": "group",
+          "isCollapse": true,
+          "isVisible": true,
+          "styleClass": [
+            "formGroup"
+          ],
+          "activitySettings": [
+            {
+              "value": "Get",
+              "key": "RequestType",
+              "label": "Request Type",
+              "baseType": "control",
+              "required": true,
+              "controlType": "dropdown",
+              "valueChangesActions": {
+                "Get": {
+                  "disable": [
+                    "PostData"
+                  ],
+                  "setValue": {
+                    "ContentType": "application/json"
+                  }
+                },
+                "Post": {
+                  "enable": [
+                    "ContentType",
+                    "PostData"
+                  ]
+                },
+                "Put": {
+                  "enable": [
+                    "ContentType",
+                    "PostData"
+                  ]
+                },
+                "Delete": {
+                  "enable": [
+                    "ContentType",
+                    "PostData"
+                  ]
+                }
+              },
+              "controlOptions": [
+                {
+                  "key": "Get",
+                  "value": "Get"
+                },
+                {
+                  "key": "Post",
+                  "value": "Post"
+                },
+                {
+                  "key": "Put",
+                  "value": "Put"
+                },
+                {
+                  "key": "Delete",
+                  "value": "Delete"
+                }
+              ]
+            },
+            {
+              "value": "application/x-www-form-urlencoded",
+              "key": "ContentType",
+              "label": "Content Type",
+              "required": true,
+              "baseType": "control",
+              "controlType": "autocomplete",
+              "controlOptions": [
+                {
+                  "key": "application/x-www-form-urlencoded",
+                  "value": "application/x-www-form-urlencoded"
+                },
+                {
+                  "key": "application/xml",
+                  "value": "application/xml"
+                },
+                {
+                  "key": "application/json",
+                  "value": "application/json"
+                }
+              ]
+            },
+            {
+              "value": "",
+              "key": "PostData",
+              "label": "Post Data",
+              "baseType": "control",
+              "controlType": "textarea"
+            }
+          ]
+        },
+        {
+          "key": "headersGroup",
+          "label": "Headers",
+          "baseType": "group",
+          "isCollapse": true,
+          "isVisible": true,
+          "styleClass": [
+            "formGroup"
+          ],
+          "activitySettings": [
+            {
+              "key": "HeaderData",
+              "nameLabel": "Header",
+              "valueLabel": "Value",
+              "label": "",
+              "baseType": "control",
+              "conversionType": 0,
+              "controlType": "nameValue"
+            }
+          ]
+        },
+        {
+          "key": "proxyGroup",
+          "label": "Proxy",
+          "styleClass": [
+            "formGroup"
+          ],
+          "baseType": "group",
+          "isCollapse": true,
+          "isVisible": true,
+          "activitySettings": [
+            {
+              "value": "",
+              "key": "Proxy",
+              "label": "Proxy",
+              "baseType": "control",
+              "controlType": "textbox"
+            },
+            {
+              "value": "",
+              "order": 1,
+              "key": "SrcUserName",
+              "label": "User Name",
+              "baseType": "control",
+              "controlType": "textbox"
+            },
+            {
+              "value": "",
+              "key": "SrcPassword",
+              "label": "Password",
+              "baseType": "control",
+              "controlType": "password"
+            }
+          ]
+        },
+        {
+          "key": "Sectype",
+          "label": "Security Protocol Type",
+          "baseType": "control",
+          "value": "TLS12",
+          "required": true,
+          "controlType": "dropdown",
+          "controlOptions": [
+            {
+              "key": "None",
+              "value": "None"
+            },
+            {
+              "key": "SSL3",
+              "value": "SSL3"
+            },
+            {
+              "key": "TLS",
+              "value": "TLS"
+            },
+            {
+              "key": "TLS11",
+              "value": "TLS11"
+            },
+            {
+              "key": "TLS12",
+              "value": "TLS12"
+            }
+          ]
+        },
+        {
+          "styleClass": "",
+          "key": "crtval",
+          "label": "Certificate Validation Callback",
+          "labelKey": "",
+          "baseType": "control",
+          "checked": false,
+          "controlType": "checkbox",
+          "convertBoolTo": "number"
+        },
+        {
+          "styleClass": "",
+          "key": "SiteName",
+          "label": "Run From Site",
+          "labelKey": "",
+          "baseType": "control",
+          "value": "",
+          "controlType": "hidden",
+          "idFieldName": "SiteId"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "ProxyUrls",
+          "label": "",
+          "labelKey": "",
+          "styleClass": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "False",
+          "key": "isChecked",
+          "label": "",
+          "labelKey": "",
+          "styleClass": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "False",
+          "key": "byPass",
+          "label": "",
+          "labelKey": "",
+          "styleClass": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "HostName",
+          "label": "",
+          "labelKey": "",
+          "styleClass": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "0",
+          "key": "HostId",
+          "label": "",
+          "labelKey": "",
+          "styleClass": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    },
+    "Timeout": "00:01:00",
+    "size": "m-size"
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}
