@@ -1,0 +1,45 @@
+{
+  "data": {
+    "name": "WMI Query",
+    "description": "WMI Query",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "new control11",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "value": "root\\CIMV2",
+          "required": true,
+          "key": "WmiNamespace",
+          "label": "Namespace",
+          "labelKey": "NAMESPACE",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "key": "Query",
+          "required": true,
+          "label": "Query",
+          "labelKey": "QUERY",
+          "baseType": "control",
+          "controlType": "textarea",
+          "styleClass": "xl-textarea",
+          "value": ""
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

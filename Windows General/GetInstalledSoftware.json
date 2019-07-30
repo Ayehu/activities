@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Get Installed Software",
+    "description": "Get the list of installed software on the specific host.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "newControl",
+          "label": "newControl",
+          "baseType": "hostGroup",
+          "labelKey": "newControl",
+          "controlType": "",
+          "value": "newControl",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

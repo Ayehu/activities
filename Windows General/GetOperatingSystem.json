@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Get Operating System",
+    "description": "Get the operating system of the specified host",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "newControl",
+          "label": "newControl",
+          "baseType": "hostGroup",
+          "labelKey": "newControl",
+          "controlType": "",
+          "value": "newControl",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

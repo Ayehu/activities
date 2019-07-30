@@ -1,0 +1,57 @@
+{
+  "data": {
+    "name": "Get System Uptime",
+    "description": "Get the operating system's uptime in seconds",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "newControl",
+          "label": "newControl",
+          "baseType": "hostGroup",
+          "labelKey": "newControl",
+          "controlType": "",
+          "value": "newControl",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "value": "Seconds",
+          "required": false,
+          "key": "TimeInterval",
+          "disabled": false,
+          "label": "Time Unit",
+          "styleClass": "",
+          "labelKey": "GET_SYSTEM_UPTIME_TIME_INTERVAL",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "controlOptions": [
+            {
+              "key": "days",
+              "value": "Days"
+            },
+            {
+              "key": "hours",
+              "value": "Hours"
+            },
+            {
+              "key": "minutes",
+              "value": "Minutes"
+            },
+            {
+              "key": "seconds",
+              "value": "Seconds"
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

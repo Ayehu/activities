@@ -1,0 +1,53 @@
+{
+  "data": {
+    "name": "Memory",
+    "description": "Get the selected Memory information",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "SelectedDeviceStatus",
+          "label": "Type",
+          "baseType": "control",
+          "labelKey": "MEMORY_TYPE",
+          "controlType": "dropdown",
+          "value": "Available",
+          "required": true,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": [
+            {
+              "key": "Available",
+              "value": "Available"
+            },
+            {
+              "key": "Usage",
+              "value": "Usage"
+            },
+            {
+              "key": "Total",
+              "value": "Total"
+            }
+          ]
+        },
+        {
+          "value": "newControl",
+          "required": false,
+          "key": "newControl",
+          "disabled": false,
+          "label": "newControl",
+          "styleClass": "",
+          "labelKey": "newControl",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
