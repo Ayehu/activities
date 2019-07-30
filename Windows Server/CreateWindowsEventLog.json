@@ -1,0 +1,109 @@
+{
+  "data": {
+    "name": "Create Windows Event Log",
+    "description": "Creates a windows event log.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "new control11",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "LogName",
+          "label": "Event Log Name",
+          "baseType": "control",
+          "value": "Application",
+          "labelKey": "EVENT_LOG_NAME",
+          "controlType": "dropdown",
+          "controlOptions": [
+            {
+              "key": "Application",
+              "value": "Application"
+            },
+            {
+              "key": "System",
+              "value": "System"
+            }
+          ]
+        },
+        {
+          "key": "LogType",
+          "label": "Type/Level",
+          "baseType": "control",
+          "value": "Error",
+          "labelKey": "TYPE_LEVEL",
+          "controlType": "dropdown",
+          "controlOptions": [
+            {
+              "key": "Error",
+              "value": "Error"
+            },
+            {
+              "key": "Information",
+              "value": "Information"
+            },
+            {
+              "key": "Warning",
+              "value": "Warning"
+            }
+          ]
+        },
+        {
+          "key": "LogSource",
+          "label": "Source",
+          "labelKey": "SOURCE",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "LogEventID",
+          "required": true,
+          "label": "Event Id",
+          "labelKey": "EVENT_ID",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "key": "LogCategory",
+          "label": "Category",
+          "labelKey": "CATEGORY",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "key": "LogEvent",
+          "label": "Event",
+          "labelKey": "EVENT",
+          "baseType": "control",
+          "controlType": "textarea",
+          "styleClass": "xl-textarea",
+          "value": ""
+        },
+        {
+          "key": "MapDrive",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "True"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

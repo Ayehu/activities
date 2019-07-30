@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Server Hibernate",
+    "description": "Puts the selected server in hibernate mode.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "newControl",
+          "label": "new control01",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": [],
+          "required": false,
+          "disabled": false
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

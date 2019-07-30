@@ -1,0 +1,34 @@
+{
+  "data": {
+    "name": "User Authentication",
+    "description": "Authenticate user",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Domain",
+          "label": "",
+          "baseType": "control",
+          "labelKey": "",
+          "controlType": "hidden",
+          "value": "{x:Null}"
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "new control11",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "styleClass": "",
+          "labelKey": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

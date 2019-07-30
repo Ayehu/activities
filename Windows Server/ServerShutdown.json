@@ -1,0 +1,52 @@
+{
+  "data": {
+    "name": "Server Shutdown",
+    "description": "Shutdown the selected server",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "ActionType",
+          "label": "Type",
+          "baseType": "control",
+          "labelKey": "TYPE",
+          "controlType": "dropdown",
+          "value": "Normal",
+          "controlOptions": [
+            {
+              "key": "Forced",
+              "value": "Forced"
+            },
+            {
+              "key": "Normal",
+              "value": "Normal"
+            }
+          ],
+          "required": true
+        },
+        {
+          "value": "Forced,Normal",
+          "key": "ActionTypeList",
+          "label": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "styleClass": "",
+          "labelKey": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
