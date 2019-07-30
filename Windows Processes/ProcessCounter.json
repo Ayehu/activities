@@ -1,0 +1,35 @@
+{
+  "data": {
+    "name": "Process Counter",
+    "description": "Get the number of processes",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "ProcessName",
+          "label": "Process Name",
+          "baseType": "control",
+          "labelKey": "PROCESS_NAME_PATH",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "styleClass": "",
+          "labelKey": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

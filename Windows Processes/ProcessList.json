@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Process List",
+    "description": "Get the List of Processes on the Specified Host",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "newControl",
+          "label": "newControl",
+          "baseType": "hostGroup",
+          "labelKey": "newControl",
+          "controlType": "",
+          "value": "newControl",
+          "styleClass": "",
+          "controlOptions": [],
+          "required": false,
+          "disabled": false
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

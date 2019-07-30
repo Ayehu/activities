@@ -1,0 +1,88 @@
+{
+  "data": {
+    "name": "Kill Process",
+    "description": "Terminate the selected process.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "isProcessName",
+          "label": "Process Type",
+          "baseType": "control",
+          "labelKey": "KILL_PROCESS_PROCESS_TYPE",
+          "controlType": "radiobutton",
+          "value": "0",
+          "styleClass": "one-line",
+          "controlOptions": [
+            {
+              "label": "Name",
+              "value": "0"
+            },
+            {
+              "label": "Id",
+              "value": "1"
+            }
+          ],
+          "valueChangesActions": {
+            "0": {
+              "disable": [
+                "ProcessPID"
+              ],
+              "enable": [
+                "ProcessName"
+              ],
+              "setValue": {
+                "ProcessPID": ""
+              }
+            },
+            "1": {
+              "enable": [
+                "ProcessPID"
+              ],
+              "disable": [
+                "ProcessName"
+              ],
+              "setValue": {
+                "ProcessName": ""
+              }
+            }
+          }
+        },
+        {
+          "value": "",
+          "key": "ProcessName",
+          "label": "Process Name",
+          "baseType": "control",
+          "controlType": "textbox",
+          "styleClass": "",
+          "labelKey": "KILL_PROCESS_PROCESS_NAME"
+        },
+        {
+          "value": "",
+          "key": "ProcessPID",
+          "label": "Process Id",
+          "styleClass": "",
+          "labelKey": "KILL_PROCESS_PROCESS_ID",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "disabled": false,
+          "label": "new control11",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
