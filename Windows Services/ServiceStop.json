@@ -1,0 +1,36 @@
+{
+  "data": {
+    "name": "Stop Service",
+    "description": "Stops the selected service.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "ServiceName",
+          "label": "Name",
+          "baseType": "control",
+          "labelKey": "START_SERVICE_NAME",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "disabled": false,
+          "label": "new control11",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

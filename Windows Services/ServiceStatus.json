@@ -1,0 +1,40 @@
+{
+  "data": {
+    "name": "Service Status",
+    "description": "Gets the Selected Service Status",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "ServiceName",
+          "label": "Name",
+          "baseType": "control",
+          "labelKey": "SERVICE_STATUS_NAME",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "disabled": false,
+          "label": "new control01",
+          "styleClass": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": [],
+          "required": false
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

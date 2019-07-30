@@ -1,0 +1,63 @@
+{
+  "data": {
+    "name": "Set Service StartUP Type",
+    "description": "Sets the service startup type.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "ServiceName",
+          "label": "Service Name",
+          "baseType": "control",
+          "labelKey": "SERVICE_NAME",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "ServiceType",
+          "label": "Startup Type",
+          "baseType": "control",
+          "value": "Automatic",
+          "required": true,
+          "labelKey": "STARTUP_TYPE",
+          "controlType": "dropdown",
+          "controlOptions": [
+            {
+              "key": "Automatic",
+              "value": "Automatic"
+            },
+            {
+              "key": "Manual",
+              "value": "Manual"
+            },
+            {
+              "key": "Disabled",
+              "value": "Disabled"
+            }
+          ]
+        },
+        {
+          "styleClass": "",
+          "key": "newControl",
+          "label": "new control01",
+          "baseType": "hostGroup",
+          "value": "",
+          "required": false,
+          "disabled": false,
+          "labelKey": "",
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
