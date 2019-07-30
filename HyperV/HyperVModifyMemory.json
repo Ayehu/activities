@@ -1,0 +1,57 @@
+{
+  "data": {
+    "name": "HyperV Modify Memory",
+    "description": "Modify the amount of memory for a virtual machine",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "labelKey": "VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          },
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "NewMemorySizeMB",
+          "label": "New Memory Size (MB)",
+          "labelKey": "VM_MODIFY_MEMORY_NEW_MEMORY_SIZE_MB",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "label": "SCVMM",
+          "labelKey": "SCVMM",
+          "styleClass": "one-line",
+          "convertBoolTo": "number",
+          "inline": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

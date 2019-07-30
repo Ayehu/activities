@@ -1,0 +1,57 @@
+{
+  "data": {
+    "name": "HyperV Modify Cpu",
+    "description": "Modify CPU count for a virtual machine",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "labelKey": "VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          },
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "CPUCount",
+          "label": "New CPU Count",
+          "labelKey": "VM_MODIFY_CPU_NEW_CPU_COUNT",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "label": "SCVMM",
+          "labelKey": "SCVMM",
+          "styleClass": "one-line",
+          "convertBoolTo": "number",
+          "inline": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

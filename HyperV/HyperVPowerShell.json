@@ -1,0 +1,35 @@
+{
+  "data": {
+    "name": "HyperV PowerShell",
+    "description": "HyperV execute command in Power shell",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "thecmd",
+          "label": "Commands",
+          "baseType": "control",
+          "controlType": "textarea",
+          "labelKey": "",
+          "value": "",
+          "required": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

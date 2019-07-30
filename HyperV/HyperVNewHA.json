@@ -1,0 +1,96 @@
+{
+  "data": {
+    "name": "HyperV New HA",
+    "description": "Add new virtual machine",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "HyperV Host",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "labelKey": "VM_NAME_UUID",
+          "value": "",
+          "required": true,
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "VMNewName",
+          "label": "New Name",
+          "labelKey": "NEW_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "VMPath",
+          "baseType": "control",
+          "controlType": "textbox",
+          "label": "Path",
+          "labelKey": "PATH",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "VMTemplateName",
+          "required": true,
+          "label": "Template name",
+          "labelKey": "TEMPLATE_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "key": "VMHA",
+          "label": "Highly Available",
+          "labelKey": "HIGH_AVAILABLE",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "value": "False",
+          "idDefaultValue": "0",
+          "controlOptions": [
+            {
+              "key": "0",
+              "value": "False"
+            },
+            {
+              "key": "1",
+              "value": "True"
+            }
+          ]
+        },
+        {
+          "key": "SCVMM",
+          "label": "SCVMM",
+          "labelKey": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "styleClass": "one-line",
+          "convertBoolTo": "number",
+          "inline": true,
+          "checked": true,
+          "disabled": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

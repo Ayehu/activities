@@ -1,0 +1,120 @@
+{
+  "data": {
+    "name": "HyperV Change IP",
+    "description": "Change IP address of virtual machine",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "value": "",
+          "required": true,
+          "labelKey": "VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "IP",
+          "label": "IP",
+          "labelKey": "IP",
+          "value": "",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "key": "Subnet",
+          "value": "",
+          "baseType": "control",
+          "controlType": "textbox",
+          "label": "Subnet",
+          "labelKey": "SUBNET"
+        },
+        {
+          "key": "GWAddr",
+          "baseType": "control",
+          "controlType": "textbox",
+          "label": "Gateway",
+          "labelKey": "GATEWAY",
+          "value": ""
+        },
+        {
+          "value": "",
+          "key": "DNS1",
+          "label": "DNS1",
+          "labelKey": "DNS1",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "value": "",
+          "key": "DNS2",
+          "label": "DNS2",
+          "labelKey": "DNS2",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "key": "SCVMM",
+          "label": "SCVMM",
+          "styleClass": "one-line",
+          "labelKey": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "convertBoolTo": "number",
+          "inline": true
+        },
+        {
+          "value": "{x:Null}",
+          "key": "FilterApplied",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "Datastore",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "Cluster",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "Folder",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

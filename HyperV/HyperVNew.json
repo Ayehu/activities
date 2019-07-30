@@ -1,0 +1,123 @@
+{
+  "data": {
+    "name": "HyperV New",
+    "description": "New virtual machine",
+    "Timeout": "00:05:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "textbox",
+          "labelKey": "VM_NAME",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "VMVHDPath",
+          "label": "VHD Path",
+          "labelKey": "VM_VHDPATH",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "VMVHDTemplatePath",
+          "baseType": "control",
+          "controlType": "textbox",
+          "label": "Template VHD path",
+          "labelKey": "VM_VHDTemplatePath",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "VMDiskSize",
+          "required": true,
+          "inline": true,
+          "label": "Disk Size (MB)",
+          "labelKey": "DISK_SIZE",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "key": "VMStaticMemorySize",
+          "required": true,
+          "inline": true,
+          "label": "Memory Size (MB)",
+          "labelKey": "MEMORY_SIZE",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "key": "VMSwitchName",
+          "label": "Switch Name",
+          "labelKey": "SWITCH_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "VMProcessors",
+          "required": true,
+          "label": "Number of Processors",
+          "labelKey": "NUMBER_OF_CPUS",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        },
+        {
+          "value": "{x:Null}",
+          "key": "FilterApplied",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "Cluster",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "Datastore",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "Folder",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

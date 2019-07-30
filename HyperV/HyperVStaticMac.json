@@ -1,0 +1,57 @@
+{
+  "data": {
+    "name": "HyperV Static Mac",
+    "description": "Modify Static MAC",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "labelKey": "VM_NAME_UUID",
+          "value": "",
+          "required": true,
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "MACADDR",
+          "label": "MAC Address",
+          "labelKey": "MACADDR",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "00-00-00-00-00-00",
+          "required": true
+        },
+        {
+          "key": "SCVMM",
+          "label": "SCVMM",
+          "labelKey": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "styleClass": "one-line",
+          "convertBoolTo": "number",
+          "inline": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "data": {
+    "name": "HyperV Calc Host Rating",
+    "description": "Calculate host rating",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMTemplateName",
+          "label": "Template name",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "labelKey": "TEMPLATE_NAME",
+          "inline": true
+        },
+        {
+          "key": "VMCLusterName",
+          "label": "Cluster name",
+          "labelKey": "CLUSTER_NAME",
+          "value": "",
+          "baseType": "control",
+          "controlType": "textbox",
+          "inline": true
+        },
+        {
+          "key": "VMDiskSpace",
+          "value": "",
+          "baseType": "control",
+          "controlType": "textbox",
+          "label": "Disk space",
+          "labelKey": "DISK_SPACE",
+          "required": true,
+          "inline": true
+        },
+        {
+          "key": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "label": "SCVMM",
+          "labelKey": "SCVMM",
+          "styleClass": "one-line",
+          "convertBoolTo": "number",
+          "inline": true
+        },
+        {
+          "value": "{x:Null}",
+          "key": "VMName",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

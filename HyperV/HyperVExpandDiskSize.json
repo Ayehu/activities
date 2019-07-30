@@ -1,0 +1,75 @@
+{
+  "data": {
+    "name": "HyperVExpandDiskSize",
+    "description": "Expand disk size to a virtual machine",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "value": "",
+          "required": true,
+          "labelKey": "VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "VMSize",
+          "label": "Size",
+          "labelKey": "SIZE",
+          "value": "",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "key": "VMBus",
+          "baseType": "control",
+          "controlType": "textbox",
+          "label": "Bus",
+          "labelKey": "BUS",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "VMLun",
+          "label": "Lun",
+          "labelKey": "LUN",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "key": "SCVMM",
+          "label": "SCVMM",
+          "styleClass": "one-line",
+          "labelKey": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "convertBoolTo": "number",
+          "inline": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

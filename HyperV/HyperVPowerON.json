@@ -1,0 +1,80 @@
+{
+  "data": {
+    "name": "HyperV Power ON",
+    "description": "Power on virtual machine",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "labelKey": "VM_NAME_UUID",
+          "value": "",
+          "required": true,
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "SCVMM",
+          "label": "SCVMM",
+          "labelKey": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "styleClass": "one-line",
+          "convertBoolTo": "number",
+          "inline": true
+        },
+        {
+          "key": "FilterApplied",
+          "baseType": "control",
+          "controlType": "hidden",
+          "label": "",
+          "labelKey": "",
+          "value": "{x:Null}"
+        },
+        {
+          "key": "Cluster",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "{x:Null}"
+        },
+        {
+          "key": "Datastore",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "{x:Null}"
+        },
+        {
+          "key": "Folder",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "{x:Null}"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

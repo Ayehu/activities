@@ -1,0 +1,93 @@
+{
+  "data": {
+    "name": "HyperV Add Disk",
+    "description": "Add disk to a virtual machine",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "VMName",
+          "label": "VM Name",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "value": "",
+          "required": true,
+          "labelKey": "VM_NAME_UUID",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "key": "VMFileName",
+          "label": "File name",
+          "labelKey": "FILENAME",
+          "required": true,
+          "value": "",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "key": "VMSize",
+          "value": "",
+          "baseType": "control",
+          "controlType": "textbox",
+          "label": "Size",
+          "labelKey": "SIZE",
+          "required": true
+        },
+        {
+          "key": "VMType",
+          "value": "IDE",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "label": "Type",
+          "labelKey": "VMTYPE",
+          "required": true,
+          "controlOptions": [
+            {
+              "key": "IDE",
+              "value": "IDE"
+            },
+            {
+              "key": "SCSI",
+              "value": "SCSI"
+            }
+          ]
+        },
+        {
+          "value": "",
+          "key": "VMBus",
+          "label": "Bus",
+          "labelKey": "BUS",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "VMLun",
+          "label": "Lun",
+          "labelKey": "LUN",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

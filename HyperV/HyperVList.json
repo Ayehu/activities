@@ -1,0 +1,68 @@
+{
+  "data": {
+    "name": "HyperV List",
+    "description": "Get list of virtual machine names",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "SCVMM",
+          "label": "SCVMM",
+          "baseType": "control",
+          "controlType": "checkbox",
+          "labelKey": "SCVMM",
+          "styleClass": "one-line",
+          "convertBoolTo": "number",
+          "inline": true
+        },
+        {
+          "key": "FilterApplied",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "{x:Null}"
+        },
+        {
+          "key": "Cluster",
+          "baseType": "control",
+          "controlType": "hidden",
+          "label": "",
+          "labelKey": "",
+          "value": "{x:Null}"
+        },
+        {
+          "value": "{x:Null}",
+          "key": "Datastore",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        },
+        {
+          "key": "Folder",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "{x:Null}"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
