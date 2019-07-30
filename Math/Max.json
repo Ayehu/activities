@@ -1,0 +1,34 @@
+{
+  "data": {
+    "name": "Max",
+    "description": "Returns the larger of two unsigned integers.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "First Value",
+          "baseType": "control",
+          "labelKey": "FIRST_VALUE",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "key": "TheValue2",
+          "required": true,
+          "label": "Second Value",
+          "labelKey": "SECOND_VALUE",
+          "baseType": "control",
+          "controlType": "textbox",
+          "value": ""
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "data": {
+    "name": "Truncate",
+    "description": "Calculates the integral part of a specified decimal number.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Value",
+          "baseType": "control",
+          "labelKey": "FIRST_VALUE",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200
+}

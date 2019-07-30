@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Ceiling",
+    "description": "Returns the Smallest Integral Value That is Grater Than or equal to the Specified Double-Precision Floating-Point Number.",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Value",
+          "baseType": "control",
+          "labelKey": "CELLING_VALUE",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

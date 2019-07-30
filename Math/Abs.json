@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Abs",
+    "description": "Return the Absolute Value of A Specified Number",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Value",
+          "baseType": "control",
+          "labelKey": "ABS_VALUE",
+          "controlType": "textbox",
+          "value": "",
+          "required": true,
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}
