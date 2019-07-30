@@ -1,0 +1,219 @@
+{
+  "data": {
+    "name": "SNMP Get Next Request",
+    "description": "Retrieves the value of the next Object ID of a specified device",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "OId",
+          "label": "OId",
+          "labelKey": "O_ID",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "controlOptions": []
+        },
+        {
+          "key": "HostName",
+          "label": "Host Name",
+          "labelKey": "HOST_NAME",
+          "baseType": "control",
+          "controlType": "autocompleteWithPlus",
+          "value": "",
+          "required": true,
+          "idFieldName": "HostId",
+          "idDefaultValue": "-2",
+          "autocompleteParams": {
+            "entityType": 2
+          }
+        },
+        {
+          "value": "public",
+          "key": "Community",
+          "label": "Community",
+          "labelKey": "COMMUNITY",
+          "baseType": "control",
+          "controlType": "textbox",
+          "controlOptions": [],
+          "required": true
+        },
+        {
+          "value": "1",
+          "key": "SnmpVersion",
+          "label": "",
+          "styleClass": "one-line",
+          "baseType": "control",
+          "controlType": "radiobutton",
+          "controlOptions": [
+            {
+              "value": "1",
+              "label": "SNMPv1"
+            },
+            {
+              "value": "2",
+              "label": "SNMPv2c"
+            },
+            {
+              "value": "3",
+              "label": "SNMPv3"
+            }
+          ],
+          "valueChangesActions": {
+            "1": {
+              "disable": [
+                "EngineID",
+                "UserName",
+                "AuthPassword",
+                "AuthMethod",
+                "EncPassword",
+                "EncMethod"
+              ],
+              "setValue": {
+                "EngineID": "",
+                "User": "",
+                "AuthPassword": "",
+                "AuthMethod": "",
+                "EncPassword": "",
+                "EncMethod": ""
+              }
+            },
+            "2": {
+              "disable": [
+                "EngineID",
+                "UserName",
+                "AuthPassword",
+                "AuthMethod",
+                "EncPassword",
+                "EncMethod"
+              ],
+              "setValue": {
+                "EngineID": "",
+                "UserName": "",
+                "AuthPassword": "",
+                "AuthMethod": "",
+                "EncPassword": "",
+                "EncMethod": ""
+              }
+            },
+            "3": {
+              "enable": [
+                "EngineID",
+                "UserName",
+                "AuthPassword",
+                "AuthMethod",
+                "EncPassword",
+                "EncMethod"
+              ],
+              "setValue": {
+                "AuthMethod": "MD5"
+              }
+            }
+          }
+        },
+        {
+          "isCollapse": true,
+          "isVisible": true,
+          "styleClass": [
+            "formGroup"
+          ],
+          "key": "v3AuthPriv",
+          "label": "v3 Auth/Priv",
+          "labelKey": "V3_AUTH_PRIV",
+          "baseType": "group",
+          "activitySettings": [
+            {
+              "value": "",
+              "key": "EngineID",
+              "label": "Engine Id",
+              "labelKey": "ENGINE_ID",
+              "baseType": "control",
+              "controlType": "textbox"
+            },
+            {
+              "value": "",
+              "required": true,
+              "key": "UserName",
+              "label": "User",
+              "labelKey": "USER",
+              "baseType": "control",
+              "controlType": "textbox"
+            },
+            {
+              "value": "",
+              "required": true,
+              "key": "AuthPassword",
+              "inline": true,
+              "styleClass": "inline-big",
+              "label": "Auth Password",
+              "labelKey": "AUTH_PASSWORD",
+              "baseType": "control",
+              "controlType": "password"
+            },
+            {
+              "value": "",
+              "key": "AuthMethod",
+              "inline": true,
+              "styleClass": "inline-small",
+              "label": "",
+              "labelKey": "",
+              "baseType": "control",
+              "controlType": "dropdown",
+              "controlOptions": [
+                {
+                  "key": "MD5",
+                  "value": "MD5"
+                },
+                {
+                  "key": "SHA",
+                  "value": "SHA"
+                }
+              ]
+            },
+            {
+              "value": "",
+              "inline": true,
+              "styleClass": "inline-big",
+              "key": "EncPassword",
+              "label": "Enc Password",
+              "labelKey": "ENC_PASSWORD",
+              "baseType": "control",
+              "controlType": "password"
+            },
+            {
+              "value": "",
+              "key": "EncMethod",
+              "label": "",
+              "inline": true,
+              "styleClass": "inline-small",
+              "labelKey": "",
+              "baseType": "control",
+              "controlType": "dropdown",
+              "controlOptions": [
+                {
+                  "key": "DES",
+                  "value": "DES"
+                },
+                {
+                  "key": "AES",
+                  "value": "AES"
+                },
+                {
+                  "key": "3DES",
+                  "value": "3DES"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    },
+    "size": "m-size"
+  }
+}
