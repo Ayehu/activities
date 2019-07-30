@@ -1,0 +1,46 @@
+{
+  "data": {
+    "name": "SubString",
+    "description": "Returns a Sub String. the Substring Starts at a Specified Character Position.",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "baseType": "control",
+          "labelKey": "SUBSTRING_SOURCE_TEXT",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "type": "text"
+        },
+        {
+          "value": "",
+          "key": "TheValue3",
+          "label": "Start Position",
+          "labelKey": "SUBSTRING_START_POSITION",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "TheValue2",
+          "label": "Length",
+          "labelKey": "SUBSTRING_LENGTH",
+          "baseType": "control",
+          "controlType": "textbox",
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

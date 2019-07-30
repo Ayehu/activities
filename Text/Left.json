@@ -1,0 +1,38 @@
+{
+  "data": {
+    "name": "Left",
+    "description": "Returns a String Containing a Specified Number of Characters from the Left Side of a String.",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "baseType": "control",
+          "labelKey": "LEFT_SOURCE_STRING",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "type": "text"
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "TheValue2",
+          "label": "Length",
+          "labelKey": "LEFT_LENGTH",
+          "baseType": "control",
+          "controlType": "textbox",
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

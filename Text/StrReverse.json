@@ -1,0 +1,34 @@
+{
+  "data": {
+    "name": "InStr Reverse",
+    "description": "Returns the position of the first occurrence of one string within another, starting from the right side of the string.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Source String",
+          "baseType": "control",
+          "labelKey": "SOURCE_STRING",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true
+        },
+        {
+          "value": "",
+          "key": "TheValue2",
+          "label": "Search String",
+          "labelKey": "SEARCH_STRING",
+          "baseType": "control",
+          "controlType": "textbox",
+          "requiredWithoutTrim": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

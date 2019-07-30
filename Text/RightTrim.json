@@ -1,0 +1,29 @@
+{
+  "data": {
+    "name": "Right Trim",
+    "description": "Return a String Containing a Copy of a Specified String with no Trailing Spaces",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "baseType": "control",
+          "labelKey": "RIGHT_TRIM_VALUE",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "disabled": false,
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

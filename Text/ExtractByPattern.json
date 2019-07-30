@@ -1,0 +1,160 @@
+{
+  "data": {
+    "name": "Extract By Pattern",
+    "description": "Extract All Text by Specific Pattern",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Source String",
+          "baseType": "control",
+          "labelKey": "EXTRACT_BY_PATTERN_SOURCE_STRING",
+          "controlType": "textarea",
+          "value": "",
+          "required": true,
+          "disabled": false,
+          "controlOptions": []
+        },
+        {
+          "key": "patternDelimiters",
+          "label": "Pattern Delimiters",
+          "labelKey": "PATTERN_DELIMITERS",
+          "baseType": "group",
+          "isCollapse": true,
+          "isVisible": true,
+          "activitySettings": [
+            {
+              "value": "",
+              "disabled": false,
+              "key": "StartString",
+              "label": "Starting",
+              "labelKey": "EXTRACT_BY_PATTERN_PATTERN_START_STRING",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": [],
+              "requiredWithoutTrim": true
+            },
+            {
+              "value": "",
+              "disabled": false,
+              "requiredWithoutTrim": true,
+              "key": "Endstring",
+              "label": "Ending",
+              "labelKey": "EXTRACT_BY_PATTERN_PATTERN_END_STRING",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            }
+          ],
+          "styleClass": [
+            "formGroup"
+          ]
+        },
+        {
+          "isCollapse": true,
+          "isVisible": true,
+          "key": "outputFormat",
+          "label": "Output Format",
+          "labelKey": "OUTPUT_FORMAT",
+          "baseType": "group",
+          "activitySettings": [
+            {
+              "value": "",
+              "disabled": false,
+              "key": "CreateTable",
+              "label": "Result as Table",
+              "labelKey": "EXTRACT_BY_PATTERN_RESULT_AS_TABLE",
+              "baseType": "control",
+              "controlType": "checkbox",
+              "controlOptions": [],
+              "required": false,
+              "convertBoolTo": "number"
+            }
+          ],
+          "styleClass": [
+            "formGroup"
+          ]
+        },
+        {
+          "isCollapse": true,
+          "isVisible": false,
+          "styleClass": [
+            "formGroup"
+          ],
+          "key": "columnNameDelimiters",
+          "label": "Column Name Delimiters",
+          "labelKey": "COLUMN_NAME_DELIMITERS",
+          "baseType": "group",
+          "activitySettings": [
+            {
+              "value": "",
+              "requiredWithoutTrim": true,
+              "key": "coulmnNameStart",
+              "disabled": true,
+              "label": "Starting",
+              "labelKey": "EXTRACT_BY_PATTERN_COLUMN_NAME_START_STRING",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            },
+            {
+              "value": "",
+              "requiredWithoutTrim": true,
+              "key": "ColumnNameEnds",
+              "disabled": true,
+              "label": "Ending",
+              "labelKey": "EXTRACT_BY_PATTERN_COLUMN_NAME_END_STRING",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            }
+          ]
+        },
+        {
+          "isCollapse": true,
+          "isVisible": false,
+          "styleClass": [
+            "formGroup"
+          ],
+          "key": "columnDataDelimiters",
+          "label": "Column Data Delimiters",
+          "labelKey": "COLUMN_DATA_DELIMITERS",
+          "baseType": "group",
+          "activitySettings": [
+            {
+              "value": "",
+              "requiredWithoutTrim": true,
+              "key": "ColumnDataStart",
+              "disabled": true,
+              "label": "Starting",
+              "labelKey": "EXTRACT_BY_PATTERN_COLUMN_DATA_START_STRING",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            },
+            {
+              "value": "",
+              "requiredWithoutTrim": true,
+              "key": "ColumnDataEnds",
+              "disabled": true,
+              "label": "Ending",
+              "labelKey": "EXTRACT_BY_PATTERN_COLUMN_DATA_END_STRING",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    },
+    "size": "m-size"
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

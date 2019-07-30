@@ -1,0 +1,48 @@
+{
+  "data": {
+    "name": "SubString by Text",
+    "description": "Returns a Sub String. the Sub String is Between the Specified Start Text and the Specified End Text.",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Source String",
+          "baseType": "control",
+          "labelKey": "SUBSTRING_BY_TEXT_SOURCE_STRING",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "type": "text"
+        },
+        {
+          "value": "",
+          "key": "TheValue3",
+          "label": "Start Text",
+          "labelKey": "SUBSTRING_BY_TEXT_START_TEXT",
+          "baseType": "control",
+          "controlType": "textbox",
+          "type": "text",
+          "requiredWithoutTrim": true
+        },
+        {
+          "value": "",
+          "key": "TheValue2",
+          "label": "End Text",
+          "labelKey": "SUBSTRING_BY_TEXT_END_TEXT",
+          "baseType": "control",
+          "controlType": "textbox",
+          "type": "text",
+          "requiredWithoutTrim": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

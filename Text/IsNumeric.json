@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Is Numeric",
+    "description": "Return True If the String Has a Numeric Value.",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "baseType": "control",
+          "labelKey": "IS_NUMERIC_STRING",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

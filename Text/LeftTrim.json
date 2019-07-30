@@ -1,0 +1,28 @@
+{
+  "data": {
+    "name": "Left Trim",
+    "description": "Returns a String Containing a Copy of a Specified String with No Leading Spaces.",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "baseType": "control",
+          "labelKey": "LEFT_TRIM_STRING",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

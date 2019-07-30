@@ -1,0 +1,38 @@
+{
+  "data": {
+    "name": "Contains",
+    "description": "Returns True if String Contains the Search Phase",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue2",
+          "label": "Find Text",
+          "baseType": "control",
+          "labelKey": "CONTAINS_WITHIN_TEXT",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "type": "text"
+        },
+        {
+          "value": "",
+          "key": "TheValue",
+          "label": "Within Text",
+          "labelKey": "CONTAINS_FIND_TEXT",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

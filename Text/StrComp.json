@@ -1,0 +1,34 @@
+{
+  "data": {
+    "name": "String Compare",
+    "description": "Returns -1, 0, or 1, based on the result of a string comparison.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "First String",
+          "baseType": "control",
+          "labelKey": "STRING_COMPARE_FIRST_STRING",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "TheValue2",
+          "label": "Second String",
+          "labelKey": "STRING_COMPARE_FIRST_STRING",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

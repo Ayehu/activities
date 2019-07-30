@@ -1,0 +1,36 @@
+{
+  "data": {
+    "name": "InStr",
+    "description": "Returns an Integer Specifying the Start Position of the First Occurrence of One String Within Another.",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue2",
+          "label": "Find Text",
+          "baseType": "control",
+          "labelKey": "FIND_TEXT",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "type": "text"
+        },
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "labelKey": "TEXT",
+          "baseType": "control",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "controlType": "textbox",
+          "type": "text"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

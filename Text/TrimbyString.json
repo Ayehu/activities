@@ -1,0 +1,45 @@
+{
+  "data": {
+    "name": "Trim By String",
+    "description": "Return a String Without the Specified Leading or Ending Characters",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "baseType": "control",
+          "labelKey": "TRIM_BY_STRING_STRING",
+          "controlType": "textbox",
+          "value": "",
+          "required": true
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "StartValue",
+          "label": "Leading String",
+          "labelKey": "TRIM_BY_STRING_LEADING_STRING",
+          "baseType": "control",
+          "controlType": "textbox"
+        },
+        {
+          "value": "",
+          "required": true,
+          "key": "EndValue",
+          "label": "Ending String",
+          "labelKey": "TRIM_BY_STRING_LEADING_STRING",
+          "baseType": "control",
+          "controlType": "textbox"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}

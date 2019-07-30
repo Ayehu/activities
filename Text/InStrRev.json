@@ -1,0 +1,40 @@
+{
+  "data": {
+    "name": "InStrRev",
+    "description": "Returns the Position if the First Occurence of one string within Another, Staring from the Right Side of the String",
+    "Timeout": null,
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "TheValue2",
+          "label": "Find Text",
+          "baseType": "control",
+          "labelKey": "INSTRREV_SEARCH_PHASE",
+          "controlType": "textbox",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "disabled": false,
+          "controlOptions": []
+        },
+        {
+          "key": "TheValue",
+          "label": "Text",
+          "labelKey": "INSTRREV_SOURCE_STRING",
+          "baseType": "control",
+          "value": "",
+          "requiredWithoutTrim": true,
+          "controlType": "textbox",
+          "disabled": false,
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  },
+  "innerCode": 200,
+  "message": "SUCCESS"
+}
