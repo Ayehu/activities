@@ -1,0 +1,35 @@
+{
+  "data": {
+    "name": "Unshare Folder",
+    "description": "Stop sharing a folder",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "hostGroup",
+          "label": "",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "value": "",
+          "controlType": "",
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": "ShareName",
+          "label": "Share Name",
+          "baseType": "control",
+          "labelKey": "SHARE_NAME",
+          "value": "",
+          "controlType": "textbox",
+          "required": true
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

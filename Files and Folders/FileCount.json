@@ -1,0 +1,35 @@
+{
+  "data": {
+    "name": "File Count",
+    "description": "Count the number of files in the folder.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "labelKey": "PATH"
+        },
+        {
+          "key": "hostGroup",
+          "label": "new control11",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "value": "",
+          "styleClass": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

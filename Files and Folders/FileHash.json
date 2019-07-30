@@ -1,0 +1,84 @@
+{
+  "data": {
+    "name": "File Hash",
+    "description": "Calculate a Hash of a File.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true,
+          "disabled": false,
+          "styleClass": ""
+        },
+        {
+          "key": "HashAlgorithm_UI",
+          "label": "Hash Type",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "value": "MD5",
+          "styleClass": "",
+          "controlOptions": [
+            {
+              "key": "0",
+              "value": "MD5"
+            },
+            {
+              "key": "1",
+              "value": "SHA1"
+            },
+            {
+              "key": "2",
+              "value": "SHA256"
+            },
+            {
+              "key": "3",
+              "value": "SHA384"
+            },
+            {
+              "key": "4",
+              "value": "SHA512"
+            },
+            {
+              "key": "5",
+              "value": "RIPEMD160"
+            }
+          ],
+          "required": true,
+          "idFieldName": "HashAlgorithm",
+          "idDefaultValue": "0",
+          "disabled": false
+        },
+        {
+          "value": "newControl",
+          "required": false,
+          "key": "newControl",
+          "disabled": false,
+          "label": "newControl",
+          "styleClass": "",
+          "labelKey": "newControl",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": []
+        },
+        {
+          "value": "True",
+          "key": "RequiresMap",
+          "label": "Path",
+          "styleClass": "",
+          "baseType": "control",
+          "controlType": "hidden"
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

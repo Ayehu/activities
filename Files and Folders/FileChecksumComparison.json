@@ -1,0 +1,146 @@
+{
+  "data": {
+    "name": "File CheckSum Comparison",
+    "description": "Compares the checksum of two files and returns whether or not they are equal",
+    "Timeout": "00:02:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "MD5",
+          "key": "HashAlgorithm_UI",
+          "label": "Hash Type",
+          "baseType": "control",
+          "controlType": "dropdown",
+          "required": true,
+          "controlOptions": [
+            {
+              "key": "0",
+              "value": "MD5"
+            },
+            {
+              "key": "1",
+              "value": "SHA1"
+            },
+            {
+              "key": "2",
+              "value": "SHA256"
+            },
+            {
+              "key": "3",
+              "value": "SHA384"
+            },
+            {
+              "key": "4",
+              "value": "SHA512"
+            },
+            {
+              "key": "5",
+              "value": "RIPEMD160"
+            }
+          ],
+          "idFieldName": "HashAlgorithm",
+          "idDefaultValue": "0"
+        },
+        {
+          "key": "RequiresMap",
+          "label": "",
+          "labelKey": "",
+          "baseType": "control",
+          "controlType": "hidden",
+          "value": "True"
+        },
+        {
+          "key": "source",
+          "label": "Source",
+          "labelKey": "SOURCE",
+          "baseType": "group",
+          "isCollapse": true,
+          "isVisible": true,
+          "styleClass": [
+            "formGroup"
+          ],
+          "activitySettings": [
+            {
+              "value": "",
+              "required": true,
+              "key": "SrcPath",
+              "disabled": false,
+              "label": "Path",
+              "styleClass": "",
+              "labelKey": "SOURCE_PATH",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            },
+            {
+              "value": "",
+              "required": false,
+              "key": "newControl_1",
+              "disabled": false,
+              "label": "newControl",
+              "styleClass": "",
+              "labelKey": "newControl",
+              "baseType": "hostGroup",
+              "customKeys": {
+                "hostName": "SrcHostName",
+                "userName": "SrcUserName",
+                "password": "SrcPassword",
+                "hostId": "SrcHostId"
+              },
+              "controlType": "",
+              "controlOptions": []
+            }
+          ]
+        },
+        {
+          "key": "destination",
+          "label": "Destination",
+          "baseType": "group",
+          "labelKey": "DESTINATION",
+          "isCollapse": true,
+          "isVisible": true,
+          "styleClass": [
+            "formGroup"
+          ],
+          "activitySettings": [
+            {
+              "value": "",
+              "required": true,
+              "key": "DstPath",
+              "disabled": false,
+              "label": "Path",
+              "styleClass": "",
+              "labelKey": "DESTINATION_PATH",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            },
+            {
+              "value": "",
+              "required": false,
+              "key": "newControl_2",
+              "disabled": false,
+              "label": "newControl",
+              "styleClass": "",
+              "labelKey": "newControl",
+              "baseType": "hostGroup",
+              "customKeys": {
+                "hostName": "DstHostName",
+                "userName": "DstUserName",
+                "password": "DstPassword",
+                "hostId": "DstHostId"
+              },
+              "controlType": "",
+              "controlOptions": []
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "data": {
+    "name": "Set Folder Permissions",
+    "description": "Set folder permissions.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "labelKey": "FILE_EXISTS_PATH",
+          "value": "",
+          "required": true,
+          "controlType": "textbox",
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "key": 1,
+          "label": "new control01",
+          "baseType": "hostGroup",
+          "labelKey": "",
+          "value": "",
+          "controlType": "",
+          "required": false,
+          "disabled": false,
+          "styleClass": "",
+          "controlOptions": []
+        },
+        {
+          "styleClass": [
+            "formGroup"
+          ],
+          "key": "permissions",
+          "label": "Permissions",
+          "labelKey": "PERMISSIONS",
+          "baseType": "group",
+          "isCollapse": true,
+          "isVisible": true,
+          "activitySettings": [
+            {
+              "value": "",
+              "required": true,
+              "key": "recipient",
+              "styleClass": "",
+              "label": "User/Group Name",
+              "labelKey": "USER_GROUP_NAME",
+              "baseType": "control",
+              "controlType": "textbox",
+              "controlOptions": []
+            },
+            {
+              "value": "",
+              "key": "PermissionsData",
+              "label": "",
+              "labelKey": "",
+              "baseType": "control",
+              "controlType": "permissions"
+            },
+            {
+              "checked": false,
+              "key": "InheritablePermissions",
+              "label": "Remove Existing Permissions",
+              "labelKey": "REMOVE_EXISTING_PERMISSIONS",
+              "styleClass": "",
+              "baseType": "control",
+              "controlType": "checkbox"
+            }
+          ]
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    },
+    "size": "m-size"
+  }
+}

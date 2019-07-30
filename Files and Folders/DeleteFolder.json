@@ -1,0 +1,45 @@
+{
+  "data": {
+    "name": "Delete Folder",
+    "description": "Delete the selected folder.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "key": "Path",
+          "label": "Path",
+          "baseType": "control",
+          "labelKey": "DELETE_FOLDER_PATH",
+          "value": "",
+          "required": true,
+          "controlType": "textbox"
+        },
+        {
+          "key": "ContentsOnly",
+          "label": "Delete Folder Content Only",
+          "baseType": "control",
+          "labelKey": "DELETE_FOLDER_DELETE_FOLDER_CONTENTS_ONLY",
+          "value": false,
+          "controlType": "checkbox",
+          "convertBoolTo": "number"
+        },
+        {
+          "styleClass": "",
+          "key": "hostGroup",
+          "label": "new control11",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "value": "",
+          "disabled": false,
+          "controlType": "",
+          "controlOptions": []
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
