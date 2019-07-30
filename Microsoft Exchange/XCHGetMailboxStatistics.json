@@ -1,1 +1,35 @@
-{"data":{"name":"XCH Get Mailbox Statistics","description":"Get mailbox statistics information.","Timeout":"00:01:00","class":[],"rootSettings":{"isCollapse":false,"activitySettings":[{"key":"UserLogonName","label":"Account Name","labelKey":"USER_LOGON_NAME","baseType":"control","controlType":"textbox","value":"","required":true},{"value":"","key":"hostGroup","label":"","styleClass":"","labelKey":"","baseType":"hostGroup","controlType":"","controlOptions":[]}],"index":"1","label":"main","labelKey":null}}}
+{
+  "data": {
+    "name": "XCH Get Mailbox Statistics",
+    "description": "Get mailbox statistics information.",
+    "Timeout": "00:01:00",
+    "class": [],
+    "rootSettings": {
+      "isCollapse": false,
+      "activitySettings": [
+        {
+          "value": "",
+          "key": "UserLogonName",
+          "label": "Account Name",
+          "labelKey": "USER_LOGON_NAME",
+          "baseType": "control",
+          "controlType": "textbox",
+          "required": true
+        },
+        {
+          "value": "",
+          "key": "hostGroup",
+          "label": "",
+          "labelKey": "",
+          "baseType": "hostGroup",
+          "controlType": "",
+          "controlOptions": [],
+          "styleClass": ""
+        }
+      ],
+      "index": "1",
+      "label": "main",
+      "labelKey": null
+    }
+  }
+}
