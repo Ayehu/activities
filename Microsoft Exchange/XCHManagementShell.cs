@@ -27,7 +27,7 @@ namespace Ayehu.Sdk.ActivityCreation
         public ICustomActivityResult Execute()
         {
             StringWriter sw = new StringWriter();
-            DataTable dt = new DataTable("resultSet");
+            DataTable dt = new DataTable("resultSet1");
             string strResult = string.Empty;
 
             string _exchangeConnectionUri = string.Format("http://{0}/PowerShell/?SerializationLevel=Full", HostName);
